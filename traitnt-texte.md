@@ -8,8 +8,10 @@ author: Sébastien Biay
 
 [comment2]: <1> (C'est parti pour l'activité : Reprendre à la diapo 13)
 
+
 # Introduction
 [comment3]: <1> (TITRE1)
+
 
 ## Course de vitesse ! 
 
@@ -180,7 +182,7 @@ Pour commenter un passage du texte, deux solutions sont possibles :
 
 [comment18]: <12> (- Faire des modifications basiques sur les polices, les effets de caractères etc.)
 
-[comment19]: <12> (2e chose. On a travaillé sur un document de type article ; mais ce qui nous intéresse c'est de faire un mémoire : on va travailler sur la mise en page.)
+[comment19]: <12> (2^e^ chose. On a travaillé sur un document de type article ; mais ce qui nous intéresse c'est de faire un mémoire : on va travailler sur la mise en page.)
 
 [comment20]: <12> (- Créer une page de titre, pour l'instant très basique, avec simplement un titre, on pourra l'élaborer plus tard)
 
@@ -268,6 +270,8 @@ Il ne faut pas sauter de lignes avec la touche Entrée, mais modifier le Titre 1
 - Faire de même pour les autres titres
 
 - Terminer la mise en forme en modifiant le style **Citations langue étrangère** : italique.
+
+[comment33]: <18> (L'année prochaine, placer ici « Importer/exporter un style ».)
 
 
 ## Mettre en page un mémoire 
@@ -358,6 +362,7 @@ On peut désormais ajouter les numéros :
 - **Aligner à gauche** le numéro que l'on vient de créer (cela se répercute sur toutes les pages du style)
 - Réitérer pour créer les numéros de la page droite, où on alignera les numéros à droite
 
+
 ### <26>
 
 On peut désormais ajouter les titres courants :
@@ -397,7 +402,7 @@ Vous pouvez transformer le document en pdf comme pour l'imprimer en recto-verso�
 
 La p. 2, verso de la page de titre, reste blanche et sans numéro pour que le chapitre commence sur la page impaire suivante.
 
-[comment34]: <28> (Faire un retour chariot pour le titre)
+[comment35]: <28> (Faire un retour chariot pour le titre)
 
 
 ## Préparer une table des matières 
@@ -424,6 +429,7 @@ Mais comme « Chapitre 1 » doit rester en style de paragraphe Titre 1, il fau
 - Modifier ce nouveau style :
 	- Effets de caractère > Effets > Casse > (Sans)
 	- Police > Taille > 28 pt.
+
 
 ### <31>
 
@@ -459,72 +465,28 @@ Modifier **Titre de table des matières** pour le faire ressembler au Titre 1 :
 - Alignement : centrer
 
 
-## Les premières pages du mémoire 
+## Importer/exporter un style 
 
 ### <34>
 
-Si vous ouvrez un livre récent imprimé en France et que vous cherchez où est la p. 1 (en remontant depuis les premières pages numérotées), vous arriverez sans doute à la première feuille du livre.
+Faire un style de document, c'est bien ; pouvoir le réutiliser, c'est mieux !
+On va exporter le style que l'on vient d'élaborer pour l'appliquer à un nouveau document.
 
-Cette p. 1 peut :
+- Cliquer sur **Fichier** > Modèles > Enregistre comme modèle
+- Sélectionner la catégorie du modèle : **Styles**
+- Donner un nom, par ex. « Mémoire »
 
-1. Être blanche
-2. Présenter le seul titre de l'ouvrage : c'est ce qu'on appelle le **faux titre**
+Le style est sauvegardé.
+
 
 ### <35>
 
-La mise en page d'un mémoire peut faire abstraction de cela : notre p. 1 sera la page de titre rassemblant les informations suivantes :
+Récupérons maintenant un document structuré dont le style est différent.
+On peut reprendre du Moodle le document `vertus-etape-2.odt` en cliquant [**ici**](https://pedag.u-picardie.fr/moodle/upjv/pluginfile.php/930077/mod_folder/content/0/vertus-etape-2.odt?forcedownload=1)
 
-1. En-tête : nom de l'institution
-2. Auteur
-3. Titre
-4. Sous-titre
-5. Composition du jury
-6. Pied de page :
-	- La mention « Mémoire pour le diplôme de master… »
-	- Date
+- Renommer ce document pour ne pas le confondre : ce sera un simple test, `test.odt` peut faire l'affaire
+- Ouvrir ce fichier et aller sur **Styles** > Charger des styles depuis un modèle
+- Sélectionner dans la catégorie Styles notre modèle Mémoire
+- Cliquer sur **Ecraser**, puis Ok.
 
-# Étape 3
-[comment37]: <35> (TITRE1)
-
-### <36>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Est-ce que les styles ont bien été appliqués ?…
