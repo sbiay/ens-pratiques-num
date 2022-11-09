@@ -10,9 +10,11 @@ author: Sébastien Biay
 
 [comment3]: <1> (- Suivre le diaporama sur github : un lien dans le moodle)
 
+[comment4]: <1> (- possibilité de prendre en main Mac : mes notes sont dans fdr.md:60)
+
 
 # Introduction
-[comment4]: <1> (TITRE1)
+[comment5]: <1> (TITRE1)
 
 
 ## Course de vitesse ! 
@@ -162,58 +164,58 @@ Pour commenter un passage du texte, deux solutions sont possibles :
 
 
 # Étape 2
-[comment9]: <12> (TITRE1)
+[comment10]: <12> (TITRE1)
 
-[comment10]: <12> (Reprise pour passer de l'étape 2 à 3)
+[comment11]: <12> (Reprise pour passer de l'étape 2 à 3)
 
-[comment11]: <12> (Faire appel aux styles de titres permet :)
+[comment12]: <12> (Faire appel aux styles de titres permet :)
 
-[comment12]: <12> (- De modifier de manière homogène la mise en forme)
+[comment13]: <12> (- De modifier de manière homogène la mise en forme)
 
-[comment13]: <12> (De répercuter les propriétés des styles sur leurs enfants : il y a des relations de hiérarchie entre les styles, les enfants héritent les caractères des parents)
+[comment14]: <12> (De répercuter les propriétés des styles sur leurs enfants : il y a des relations de hiérarchie entre les styles, les enfants héritent les caractères des parents)
 
-[comment14]: <12> (- De bien gérer les enchaînements de paragraphes --un style de titre est toujours collé au paragraphe suivant)
+[comment15]: <12> (- De bien gérer les enchaînements de paragraphes --un style de titre est toujours collé au paragraphe suivant)
 
-[comment15]: <12> (- De créer une table des matières)
+[comment16]: <12> (- De créer une table des matières)
 
-[comment16]: <12> (Auj. on va commencer par modifier ces styles en veillant à :)
+[comment17]: <12> (Auj. on va commencer par modifier ces styles en veillant à :)
 
-[comment17]: <12> (Utiliser la hiérarchie des styles, on veut passer Titre 1, 2 et 3 en Georgia, on va mettre tous les titres en Georgia au lieu de faire la même chose trois fois)
+[comment18]: <12> (Utiliser la hiérarchie des styles, on veut passer Titre 1, 2 et 3 en Georgia, on va mettre tous les titres en Georgia au lieu de faire la même chose trois fois)
 
-[comment18]: <12> (- Ne pas utiliser la touche entrée, car encore une fois on veut gérer proprement les enchaînements de paragraphes)
+[comment19]: <12> (- Ne pas utiliser la touche entrée, car encore une fois on veut gérer proprement les enchaînements de paragraphes)
 
-[comment19]: <12> (- Faire des modifications basiques sur les polices, les effets de caractères etc.)
+[comment20]: <12> (- Faire des modifications basiques sur les polices, les effets de caractères etc.)
 
-[comment20]: <12> (2^e^ chose. On a travaillé sur un document de type article ; mais ce qui nous intéresse c'est de faire un mémoire : on va travailler sur la mise en page.)
+[comment21]: <12> (2^e^ chose. On a travaillé sur un document de type article ; mais ce qui nous intéresse c'est de faire un mémoire : on va travailler sur la mise en page.)
 
-[comment21]: <12> (- Créer une page de titre, pour l'instant très basique, avec simplement un titre, on pourra l'élaborer plus tard)
+[comment22]: <12> (- Créer une page de titre, pour l'instant très basique, avec simplement un titre, on pourra l'élaborer plus tard)
 
-[comment22]: <12> (- Prévoir l'impression du mémoire recto-verso.)
+[comment23]: <12> (- Prévoir l'impression du mémoire recto-verso.)
 
-[comment23]: <12> (On entre dans de la typographie un peu spécifique : la mise en page d'imprimerie observe certaines règles pas évidentes à appliquer dans un traitement de texte basique.)
+[comment24]: <12> (On entre dans de la typographie un peu spécifique : la mise en page d'imprimerie observe certaines règles pas évidentes à appliquer dans un traitement de texte basique.)
 
-[comment24]: <12> (- Les **pages de titres** sont toujours à droite, même s'il faut laisser un blanc à gauche)
+[comment25]: <12> (- Les **pages de titres** sont toujours à droite, même s'il faut laisser un blanc à gauche)
 
-[comment25]: <12> (- La position des numéros alterne sur la page de droite et la page de gauche)
+[comment26]: <12> (- La position des numéros alterne sur la page de droite et la page de gauche)
 
-[comment26]: <12> (- Si on laisse un blanc avant une page de titre, il ne faut pas de numéro sur la page blanche)
+[comment27]: <12> (- Si on laisse un blanc avant une page de titre, il ne faut pas de numéro sur la page blanche)
 
-[comment27]: <12> (- Et on ne veut évidemment pas de numéro sur la première et c'est mieux de ne pas en avoir non plus sur les autres pages de titre)
+[comment28]: <12> (- Et on ne veut évidemment pas de numéro sur la première et c'est mieux de ne pas en avoir non plus sur les autres pages de titre)
 
-[comment28]: <12> (- On peut faire des titres courants : qui rappellent le chapitre et la sous partie)
+[comment29]: <12> (- On peut faire des titres courants : qui rappellent le chapitre et la sous partie)
 
-[comment29]: <12> (Pour faire tout cela on va utiliser des styles de pages : pour avoir une Première page qui sera le titre du mémoire, et une succession de page gauche et de page droite)
+[comment30]: <12> (Pour faire tout cela on va utiliser des styles de pages : pour avoir une Première page qui sera le titre du mémoire, et une succession de page gauche et de page droite)
 
-[comment30]: <12> (Une fois qu'on aura fait cela, on ajoutera à notre titre de Chapitre la mention « Chapitre 1 »)
+[comment31]: <12> (Une fois qu'on aura fait cela, on ajoutera à notre titre de Chapitre la mention « Chapitre 1 »)
 
-[comment31]: <12> (Puis on crééra la table des matières, à laquelle on donnera la même apparence qu'un Titre 1, mais si on en faisait un Titre 1 elle donnerait elle-même sa pagination.)
+[comment32]: <12> (Puis on crééra la table des matières, à laquelle on donnera la même apparence qu'un Titre 1, mais si on en faisait un Titre 1 elle donnerait elle-même sa pagination.)
 
 
 ## Modifier les styles 
 
 ### <13>
 
-[comment33]: <13> (**ATTENTION** Il faudrait que j'intègre les propriétés de style dans les diapos : le document modèle parasite plutôt qu'autre chose.)
+[comment34]: <13> (**ATTENTION** Il faudrait que j'intègre les propriétés de style dans les diapos : le document modèle parasite plutôt qu'autre chose.)
 
 Vous avez sans doute déjà remarqué que les styles ont des relations hiérarchiques. 
 
@@ -275,7 +277,7 @@ Il ne faut pas sauter de lignes avec la touche Entrée, mais modifier le Titre 1
 
 - Terminer la mise en forme en modifiant le style **Citations langue étrangère** : italique.
 
-[comment34]: <18> (L'année prochaine, placer ici « Importer/exporter un style ».)
+[comment35]: <18> (L'année prochaine, placer ici « Importer/exporter un style ».)
 
 
 ## Mettre en page un mémoire 
@@ -406,7 +408,7 @@ Vous pouvez transformer le document en pdf comme pour l'imprimer en recto-verso�
 
 La p. 2, verso de la page de titre, reste blanche et sans numéro pour que le chapitre commence sur la page impaire suivante.
 
-[comment36]: <28> (Faire un retour chariot pour le titre)
+[comment37]: <28> (Faire un retour chariot pour le titre)
 
 
 ## Préparer une table des matières 
