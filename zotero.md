@@ -20,12 +20,13 @@ Plan :
 
 [comment]: <> (FINET)
 
+[comment1]: <1> ()
 
 
 <a id='t1'/>
 
 # Prendre en main Zotero
-[comment1]: <1> (TITRE1)
+[comment2]: <1> (TITRE1)
 
 
 <a id='t1-1'/>
@@ -37,6 +38,35 @@ Plan :
 Télécharger le fichier `vertus-etape-3.odt` depuis Moodle ([**ici**](https://pedag.u-picardie.fr/moodle/upjv/pluginfile.php/930077/mod_folder/content/0/vertus-etape-3.odt?forcedownload=1)).
 
 On y ajoutera nos références bibliographiques.
+
+[comment4]: <2> (Par rapport à où on en était resté :)
+
+[comment5]: <2> (- Des choix typographiques améliorés, validés par P. Sénéchal)
+[comment6]: <2> (- Une pièce de titre qui peut vous servir de modèle)
+[comment7]: <2> (- Une succession d'annexes introductives)
+[comment8]: <2> (- Vous n'êtes pas obligés d'avoir une dédicace, mais des remerciements oui --en général on commence par le directeur de mémoire.)
+
+[comment9]: <2> (Sur le moodle, il y a aussi `piece-titre-m2.odt` : pour votre M2, la typographie de la pièce de titre changera un peu.)
+
+[comment10]: <2> (Zotero : )
+
+[comment11]: <2> (- Découvrir cette interface)
+[comment12]: <2> (- On va créer quelques références à la main pour découvrir progressivement la composition des notices)
+[comment13]: <2> (- On va tout de suite essayer de citer ces références dans le traitement de texte --utilisation des boutons de la barre d'outils--)
+[comment14]: <2> (- Comment bien modifier et mettre à jour une référence)
+[comment15]: <2> (- Comment combiner du texte et des références en note de bas de page)
+[comment16]: <2> (- Tester des feuilles de styles différentes)
+[comment17]: <2> (- Organiser ses références en créant des collections)
+
+[comment18]: <2> (Chercher des références dans les catalogues spécialisés : )
+
+[comment19]: <2> (- Le catalogue du SCD de l'UPJV est limité)
+[comment20]: <2> (- Quel est le réflexe à avoir pour trouver un livre qui n'est pas à Amiens ?)
+[comment21]: <2> (- Maintenant quel est le catalogue à utiliser pour des recherches approfondies sur un sujet en histoire de l'art ?)
+
+[comment22]: <2> (On va découvrir aussi d'autres catalogues et évaluer leur forces et leurs faiblesses pour créer rapidement et proprement sa bibliographie sur Zotero.)
+
+[comment23]: <2> (Car on fond qu'elle est la première qualité du praticien du numérique ?)
 
 
 ### <3>
@@ -259,7 +289,7 @@ Vous serez amenés à choisir des styles différents selon les ciconstances :
 - Préférences de votre directeur de recherche pour le mémoire
 - Choix d'une maison d'édition pour une publication
 
-Le jeu consiste à trouver le style dont on a besoin chaque travail
+Le jeu consiste à trouver le style dont on a besoin pour chaque travail
 
 
 ### <19>
@@ -297,8 +327,8 @@ Pour utiliser une feuille de style qui ne se serait pas installée toute seule 
 
 Vous devriez voir **UPJV Histoire de l'art - note complète** parmi les styles disponibles
 
-- Sinon : bouton **+**
-- Naviguer jusque au fichier que vous avez sauvegardé pour l'ajouter
+- Sinon : bouton **+** dans l'onglet **Citer**
+- Naviguer jusque au fichier que vous avez sauvegardé pour l'installer
 
 
 ### <22>
@@ -337,7 +367,7 @@ Une fois le compte créé sur le web, revenir dans l'onglet Synchronisation pour
 <a id='t2'/>
 
 # Créer et alimenter de nouvelles collections
-[comment9]: <24> (TITRE1)
+[comment30]: <24> (TITRE1)
 
 
 <a id='t2-1'/>
