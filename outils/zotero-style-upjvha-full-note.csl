@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" page-range-format="expanded" demote-non-dropping-particle="sort-only" default-locale="fr-FR">
   <info>
-    <title>UPJV Histoire de l'art - note complète (1.0)</title>
-    <title-short>UPJVHA-full-note-1.0</title-short>
-    <id>upjha-full-note-1.0</id>
+    <title>UPJV Histoire de l'art - note complète (1.1)</title>
+    <title-short>UPJVHA-full-note-1.1</title-short>
+    <id>upjha-full-note-1.1</id>
     <link href="http://www.zotero.org/styles/invisu" rel="template"/>
     <link href="http://www.zotero.org/styles/le-tapuscrit-note" rel="template"/>
     <link href="http://www.zotero.org/styles/traces" rel="template"/>
@@ -73,6 +73,19 @@
         et-al-min="4" et-al-use-first="3" initialize-with="."/>
     </names>
   </macro>
+  <macro name="collection-editor"><!--Utilisé pour l'éditeur scientifique du conteneur d'une source éditée-->
+    <names variable="collection-editor" prefix=", éd. ">
+      <name 
+        font-style="normal" and="text"
+        et-al-min="4" et-al-use-first="3" initialize-with="."/>
+    </names>
+  </macro>
+  <macro name="collection-editor-bib">
+    <names variable="collection-editor" prefix=", éd. ">
+      <name 
+        font-style="normal" and="text"/>
+    </names>
+  </macro>
   <macro name="translator-bib">
     <names variable="translator" prefix=", ">
       <label form="short" suffix=" "/>
@@ -140,7 +153,7 @@
           <text variable="genre" prefix=" "/>
         </group>
       </else-if>
-      <else-if type="entry-dictionary entry-encyclopedia paper-conference chapter" match="any">
+      <else-if type="entry-encyclopedia paper-conference chapter" match="any">
         <group>
           <group suffix=",">
             <text variable="title" text-case="capitalize-first" quotes="true"/>
@@ -166,6 +179,14 @@
       <else>
         <text variable="title" text-case="capitalize-first" font-style="italic"/>
       </else>
+    </choose>
+  </macro>
+  <!--Pour les ouvrages contenant des sources-->
+  <macro name="title-source">
+    <choose>
+      <if type="entry-dictionary" match="any">
+        <text variable="container-title" font-style="italic" prefix=", dans "/>
+      </if>
     </choose>
   </macro>
   <macro name="edition">
@@ -479,14 +500,6 @@
   <macro name="ISBN">
     <text variable="ISBN" prefix=". ISBN&#160;: " suffix="."/>
   </macro>
-  <macro name="archive">
-    <group suffix="." prefix=". ">
-      <group delimiter=", ">
-        <text variable="archive"/>
-        <text variable="archive_location"/>
-      </group>
-    </group>
-  </macro>
   <macro name="volume">
     <choose>
       <if is-numeric="volume">
@@ -569,6 +582,31 @@
               <if type="book graphic report map personal_communication interview motion_picture thesis broadcast speech manuscript" match="any">
                 <text variable="title" form="short" font-style="italic"/>
               </if>
+              <else-if type="entry-dictionary">
+                <text variable="title" form="short" font-style="italic"/>
+                <names variable="editor">
+                  <label form="short" suffix=" "/>
+                  <name 
+                    font-style="normal" and="text"
+                    delimiter-precedes-et-al="never" 
+                    delimiter-precedes-last="never"
+                    initialize-with="."
+                    et-al-min="1" et-al-use-first="1">
+                    <name-part name="family"/>
+                  </name>
+                </names>
+                <names variable="translator">
+                  <label form="short" suffix=" "/>
+                  <name 
+                    font-style="normal" and="text"
+                    delimiter-precedes-et-al="never" 
+                    delimiter-precedes-last="never"
+                    initialize-with="."
+                    et-al-min="1" et-al-use-first="1">
+                    <name-part name="family"/>
+                  </name>
+                </names>
+              </else-if>
               <else>
                 <text variable="title" text-case="capitalize-first" form="short" quotes="true" font-style="normal"/>
               </else>
@@ -580,16 +618,36 @@
           </group>
         </else-if>
         <else>
-          <text macro="author"/>
-          <text macro="title"/>
-          <text macro="editor"/>
-          <text macro="translator"/>
-          <text macro="edition"/>
-          <text macro="event"/>
-          <text macro="place"/>
-          <text macro="yearpage"/>
-          <text macro="accessed"/>
-          <text macro="locators" prefix=", "/>
+          <choose>
+            <!--Pour les sources éditées en première position-->
+            <if type="entry-dictionary">
+              <text macro="author"/>
+              <text macro="title"/>
+              <text macro="editor"/>
+              <text macro="translator"/>
+              <text macro="title-source"/>
+              <text macro="collection-editor"/>
+              <text macro="edition"/>
+              <text macro="event"/>
+              <text macro="place"/>
+              <text macro="yearpage"/>
+              <text macro="accessed"/>
+              <text macro="locators" prefix=", "/>
+            </if>
+            <!--Pour tous les autres types-->
+            <else>
+              <text macro="author"/>
+              <text macro="title"/>
+              <text macro="editor"/>
+              <text macro="translator"/>
+              <text macro="edition"/>
+              <text macro="event"/>
+              <text macro="place"/>
+              <text macro="yearpage"/>
+              <text macro="accessed"/>
+              <text macro="locators" prefix=", "/>
+            </else>
+          </choose>
         </else>
       </choose>
     </layout>
@@ -604,6 +662,8 @@
       <text macro="title"/>
       <text macro="editor-bib"/>
       <text macro="translator-bib"/>
+      <text macro="title-source"/>
+      <text macro="collection-editor-bib"/>
       <choose>
         <if match="none" variable="collection-title">
           <text variable="number-of-volumes" prefix=", " suffix=" vol."/>
@@ -615,7 +675,6 @@
       <text macro="publisher"/>
       <text macro="year-bib"/>
       <text macro="collection"/>
-      <text macro="archive"/>
       <text macro="accessed"/>
       <text macro="page-bib"/>
     </layout>
