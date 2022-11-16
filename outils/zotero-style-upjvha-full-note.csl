@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="note" version="1.0" page-range-format="expanded" demote-non-dropping-particle="sort-only" default-locale="fr-FR">
   <info>
-    <title>UPJV Histoire de l'art - note complète</title>
-    <title-short>UPJVHA-full-note</title-short>
-    <id>upjha-full-note</id>
+    <title>UPJV Histoire de l'art - note complète (1.0)</title>
+    <title-short>UPJVHA-full-note-1.0</title-short>
+    <id>upjha-full-note-1.0</id>
     <link href="http://www.zotero.org/styles/invisu" rel="template"/>
     <link href="http://www.zotero.org/styles/le-tapuscrit-note" rel="template"/>
     <link href="http://www.zotero.org/styles/traces" rel="template"/>
