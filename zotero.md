@@ -863,6 +863,9 @@ Contrôler le résultat en citant la réf. dans le traitement de texte.
 # Citer la bibliographie dans le traitement de texte
 [comment41]: <60> (TITRE1)
 
+
+### <61>
+
 Pour mettre en forme la bibliographie à la fin de votre mémoire, on ne fera pas appel au bouton **Add/Édit Bibliography** dnas le traitement de texte, car on mélangerait alors sources et études.
 
 - Supprimer le contenu de la bibliographie de `vertus-etape-3.odt`
