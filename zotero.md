@@ -5,6 +5,7 @@ author: Sébastien Biay
 ---
 
 Plan :
+
 1. [Prendre en main Zotero](#t1)
 	1. [Pré-requis ](#t1-1)
 	2. [Découvrir l'interface ](#t1-2)
@@ -20,18 +21,21 @@ Plan :
 	4. [Contrôler et nettoyer les références importées ](#t2-4)
 	5. [Organiser ses collections par mots-clés ](#t2-5)
 	6. [Créer des recherches dynamiques ](#t2-6)
-3. [Mettre en place la bibliographie dans le traitement de texte](#t3)
+3. [Adapter Zotero à un usage spécifique](#t3)
 	1. [Le problème des sources éditées ](#t3-1)
+4. [Citer la bibliographie dans le traitement de texte](#t4)
 
 [comment]: <> (FINET)
 
 [comment1]: <1> (Si vous ne pouviez pas insérer des réf., reprendre à la diapo 9)
 
+[comment2]: <1> (Comment gérer des citations de passages dans Zotero --question particulière--)
+
 
 <a id='t1'/>
 
 # Prendre en main Zotero
-[comment2]: <1> (TITRE1)
+[comment3]: <1> (TITRE1)
 
 
 <a id='t1-1'/>
@@ -44,34 +48,34 @@ Télécharger le fichier `vertus-etape-3.odt` depuis Moodle ([**ici**](https://p
 
 On y ajoutera nos références bibliographiques.
 
-[comment4]: <2> (Par rapport à où on en était resté :)
+[comment5]: <2> (Par rapport à où on en était resté :)
 
-[comment5]: <2> (- Des choix typographiques améliorés, validés par P. Sénéchal)
-[comment6]: <2> (- Une pièce de titre qui peut vous servir de modèle)
-[comment7]: <2> (- Une succession d'annexes introductives)
-[comment8]: <2> (- Vous n'êtes pas obligés d'avoir une dédicace, mais des remerciements oui --en général on commence par le directeur de mémoire.)
+[comment6]: <2> (- Des choix typographiques améliorés, validés par P. Sénéchal)
+[comment7]: <2> (- Une pièce de titre qui peut vous servir de modèle)
+[comment8]: <2> (- Une succession d'annexes introductives)
+[comment9]: <2> (- Vous n'êtes pas obligés d'avoir une dédicace, mais des remerciements oui --en général on commence par le directeur de mémoire.)
 
-[comment9]: <2> (Sur le moodle, il y a aussi `piece-titre-m2.odt` : pour votre M2, la typographie de la pièce de titre changera un peu.)
+[comment10]: <2> (Sur le moodle, il y a aussi `piece-titre-m2.odt` : pour votre M2, la typographie de la pièce de titre changera un peu.)
 
-[comment10]: <2> (Zotero : )
+[comment11]: <2> (Zotero : )
 
-[comment11]: <2> (- Découvrir cette interface)
-[comment12]: <2> (- On va créer quelques références à la main pour découvrir progressivement la composition des notices)
-[comment13]: <2> (- On va tout de suite essayer de citer ces références dans le traitement de texte --utilisation des boutons de la barre d'outils--)
-[comment14]: <2> (- Comment bien modifier et mettre à jour une référence)
-[comment15]: <2> (- Comment combiner du texte et des références en note de bas de page)
-[comment16]: <2> (- Tester des feuilles de styles différentes)
-[comment17]: <2> (- Organiser ses références en créant des collections)
+[comment12]: <2> (- Découvrir cette interface)
+[comment13]: <2> (- On va créer quelques références à la main pour découvrir progressivement la composition des notices)
+[comment14]: <2> (- On va tout de suite essayer de citer ces références dans le traitement de texte --utilisation des boutons de la barre d'outils--)
+[comment15]: <2> (- Comment bien modifier et mettre à jour une référence)
+[comment16]: <2> (- Comment combiner du texte et des références en note de bas de page)
+[comment17]: <2> (- Tester des feuilles de styles différentes)
+[comment18]: <2> (- Organiser ses références en créant des collections)
 
-[comment18]: <2> (Chercher des références dans les catalogues spécialisés : )
+[comment19]: <2> (Chercher des références dans les catalogues spécialisés : )
 
-[comment19]: <2> (- Le catalogue du SCD de l'UPJV est limité)
-[comment20]: <2> (- Quel est le réflexe à avoir pour trouver un livre qui n'est pas à Amiens ?)
-[comment21]: <2> (- Maintenant quel est le catalogue à utiliser pour des recherches approfondies sur un sujet en histoire de l'art ?)
+[comment20]: <2> (- Le catalogue du SCD de l'UPJV est limité)
+[comment21]: <2> (- Quel est le réflexe à avoir pour trouver un livre qui n'est pas à Amiens ?)
+[comment22]: <2> (- Maintenant quel est le catalogue à utiliser pour des recherches approfondies sur un sujet en histoire de l'art ?)
 
-[comment22]: <2> (On va découvrir aussi d'autres catalogues et évaluer leur forces et leurs faiblesses pour créer rapidement et proprement sa bibliographie sur Zotero.)
+[comment23]: <2> (On va découvrir aussi d'autres catalogues et évaluer leur forces et leurs faiblesses pour créer rapidement et proprement sa bibliographie sur Zotero.)
 
-[comment23]: <2> (Car on fond qu'elle est la première qualité du praticien du numérique ?)
+[comment24]: <2> (Car on fond qu'elle est la première qualité du praticien du numérique ?)
 
 
 ### <3>
@@ -247,7 +251,7 @@ Un message d'alerte est donné :
 
 - Toujours cliquer sur **Non**. Si l'on dit oui, le lien avec la bibliothèque Zotero sera cassé pour la référence concernée.
 
-[comment27]: <15> (LibreOffice Writer : Dans la note, les références apparaissent surlignées en gris. )
+[comment28]: <15> (LibreOffice Writer : Dans la note, les références apparaissent surlignées en gris. )
 
 
 <a id='t1-5'/>
@@ -349,7 +353,7 @@ Des bulles s'ouvrent au survol des styles pour visualiser la typographie de chaq
 « **C'est super !**
 Mais concrètement, je prends lequel pour mon mémoire ?… »
 
-Voici un style de type **note complète** que vous pouvez utiliser : `upjvha-full-note.csl` à télécharger [**ici**](https://github.com/sbiay/ens-pratiques-num/blob/main/outils/zotero-style-upjvha-full-note.csl)
+Voici un style de type **note complète** que vous pouvez utiliser : `upjvha-full-note.csl` à télécharger [**ici**](https://github.com/sbiay/zotero/blob/main/upjvha-full-note/upjvha-full-note.csl)
 
 Une fois accédé à la page :
 
@@ -409,7 +413,7 @@ Une fois le compte créé sur le web, revenir dans l'onglet Synchronisation pour
 <a id='t2'/>
 
 # Créer et alimenter de nouvelles collections
-[comment31]: <26> (TITRE1)
+[comment32]: <26> (TITRE1)
 
 
 <a id='t2-1'/>
@@ -801,8 +805,8 @@ Notre recherche se mettra à jour automatiquement et on constate qu'elle concern
 
 <a id='t3'/>
 
-# Mettre en place la bibliographie dans le traitement de texte
-[comment38]: <56> (TITRE1)
+# Adapter Zotero à un usage spécifique
+[comment39]: <56> (TITRE1)
 
 
 <a id='t3-1'/>
@@ -835,7 +839,7 @@ Pour citer une référence comportant deux parties de titres en italique, il fau
 - Programmer une feuille de style en conséquence
 
 Le style `UPJV Histoire de l'art - note complète` y répond.
-Si vous avez besoin de le réinstaller, c'est par [**ici**](https://github.com/sbiay/ens-pratiques-num/blob/main/outils/zotero-style-upjvha-full-note.csl) ; cliquer sur **Raw**
+Si vous avez besoin de le réinstaller, c'est par [**ici**](https://github.com/sbiay/zotero/blob/main/upjvha-full-note/upjvha-full-note.csl) ; cliquer sur **Raw**
 
 
 ### <60>
@@ -854,9 +858,18 @@ Pour créer la notice particulière de notre source, il faut :
 Contrôler le résultat en citant la réf. dans le traitement de texte.
 
 
-[comment40]: <60> (Comment faire sa bibliographie)
+<a id='t4'/>
 
-[comment41]: <60> (- Mettre en forme des **sources archivisitiques** : voir les photos de michel*)
+# Citer la bibliographie dans le traitement de texte
+[comment41]: <60> (TITRE1)
 
-[comment42]: <60> (- Adopter un style de par. pour la biblio.)
-[comment43]: <60> (- On souhaite un retrait à gauche --0,5cm-- sauf pour la 1re ligne)
+Pour mettre en forme la bibliographie à la fin de votre mémoire, on ne fera pas appel au bouton **Add/Édit Bibliography** dnas le traitement de texte, car on mélangerait alors sources et études.
+
+- Supprimer le contenu de la bibliographie de `vertus-etape-3.odt`
+- Créer des Titre 2 pour « Sources » et pour « Études »
+- Dans Zotero, cliquer droit sur chacune des collections pertinentes > **Créer une bibliographie à partir de la sélection**
+- Bien choisir le style souhaité et le **mode de création** : Bibliographie
+- **Méthode de création** : coller dans le presse-papier
+- Enfin, coller le contenu du presse-papier dans le traitement de texte.
+
+Il ne reste plus qu'à appliquer un petit style de paragraphe pour présenter correctement la bibliographie (avec un retrait à gauche de 0,5cm sauf pour la 1re ligne…
