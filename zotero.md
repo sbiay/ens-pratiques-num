@@ -498,7 +498,7 @@ Catalogue collectif de France**, accessible [**ici**](https://ccfr.bnf.fr/)
 
 ### <33>
 
-De nombreux catalogues en lignes permettent d'importer automatiquement des références dans Zotero :
+De nombreux catalogues en ligne permettent d'importer automatiquement des références dans Zotero :
 
 - Chercher dans le SUDOC la notice de *L'abbaye de Fleury en l'an Mil* / par Aimoin de Fleury, CNRS éditions, 2004.
 - Créer dans votre collection `td-numerique` des sous-collections `sources` et `etudes`
@@ -519,8 +519,8 @@ Sauf que tous les catalogues ne se valent pas…
 
 On note quelques différences :
 
-- SUDOC indique davantage d'auteurs (mais ce ne sont en fait des collaborateurs ou des auteurs de préfaces, bref, ce sont des informations erronées)
-- BnF-CG indique la collection de l'ouvrage ("Sources d'histoire médiévale ») et le numéro dans la collection
+- SUDOC indique davantage d'auteurs (mais ce ne sont en fait que des collaborateurs ou des auteurs de préfaces, bref, ce sont des informations erronées)
+- BnF-CG indique la collection de l'ouvrage (« Sources d'histoire médiévale ») et le numéro dans la collection
 
 En résumé, BnF-CG est meilleur que le SUDOC pour importer des références d'ouvrages.
 
@@ -529,7 +529,7 @@ En résumé, BnF-CG est meilleur que le SUDOC pour importer des références d'o
 
 Mais il y a pire que le SUDOC…
 
-- Chercher dans **Kubikat**, [**ici**](https://aleph.mpg.de/F/27T963FN4IQLC2HXP3NRRLDQ8H5QMEUM6JS2VIK5NR2H2B8JHR-00671?func=find-b-0), la référence suivante : *Viollet-le-Duc et Pierrefonds : histoire d'un chantier* / Arnaud Timbert, Villeneuve-d'Ascq : Presses universitaires du Septentrion, 2017.
+- Chercher dans **Kubikat**, [**ici**](http://aleph.mpg.de/F?func=file&file_name=find-b&local_base=kub01&con_lng=fre), la référence suivante : *Viollet-le-Duc et Pierrefonds : histoire d'un chantier* / Arnaud Timbert, Villeneuve-d'Ascq : Presses universitaires du Septentrion, 2017.
 - L'importer dans Zotero avec le connecteur
 - Faire la même opération depuis le BnF-CG
 - Comparer les deux notices…
@@ -543,7 +543,7 @@ En revanche, les notices du BnF-CG sont très bien référencées :
 
 - Aller sur la notice de l'ouvrage dans le BnF-CG 
 - Taper **Cmd + U** (ou Ctrl + U sur PC) pour accéder au **code-source**
-- Recherche (Cmd + F) le mot « zotero » 
+- Rechercher (Cmd ou Ctrl + F) le mot « zotero » 
 
 On constate que le code-source de la notice présente toute une liste de métadonnées exprès pour Zotero, d'où la qualité des imports.
 
@@ -566,12 +566,12 @@ Toutes ces données sont exprimées dans des balises identiques : `<meta name="
 Pour pallier les limites de Kubikat avec Zotero :
 
 1. Avec une monographie :
-	- Copier le numéro **ISBN** de la notice [**ici**](https://aleph.mpg.de/F/27T963FN4IQLC2HXP3NRRLDQ8H5QMEUM6JS2VIK5NR2H2B8JHR-05201?func=full-set-set&set_number=200398&set_entry=000001&format=999)
+	- Copier le numéro **ISBN** de la notice [**ici**](http://aleph.mpg.de/F?func=direct&doc_number=002110968&local_base=kub01)
 	- Dans Zotero cliquer sur l'icône en forme de **baguette magique**
 	- Coller le numéro ISBN : l'import est bien meilleur
 
 2. Avec des articles ou des chapitres d'ouvrages
-	- Accéder à la notice [**là**](https://aleph.mpg.de/F/27T963FN4IQLC2HXP3NRRLDQ8H5QMEUM6JS2VIK5NR2H2B8JHR-02470?func=full-set-set&set_number=200713&set_entry=000003&format=999)
+	- Accéder à la notice [**là**](http://aleph.mpg.de/F?func=direct&doc_number=001913326&local_base=kub01)
 	- Chercher la même référence dans le catalogue de l'**Institut national d'histoire de l'art**, [**ici**](https://inha.summon.serialssolutions.com/#!/)
 	- On ne peut pas accéder à la notice elle-même, mais on peut cliquer sur le **connecteur Zotero** en forme de dossier jaune et sélectionner la référence pour l'importer
 
