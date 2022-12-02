@@ -684,6 +684,8 @@ Revenons aux résultats de notre recherche. Les réf. 2 et 3 sont des articles p
 
 L'import depuis Persée est extrêmement propre : il n'y a rien à nettoyer.
 
+[comment37]: <47> (Même si on importe l'URL et la date de consultation, Zotero sait que quand un article possède une pagination, c'est qu'il a été imprimé, et que donc il ne faut pas afficher d'URL ou de date de consultation. En revanche, s'il n'y a pas de pagination, il envoie l'URL.)
+
 
 ### <48>
 
@@ -806,7 +808,7 @@ Notre recherche se mettra à jour automatiquement et on constate qu'elle concern
 <a id='t3'/>
 
 # Adapter Zotero à un usage spécifique
-[comment39]: <56> (TITRE1)
+[comment40]: <56> (TITRE1)
 
 
 <a id='t3-1'/>
@@ -861,7 +863,7 @@ Contrôler le résultat en citant la réf. dans le traitement de texte.
 <a id='t4'/>
 
 # Citer la bibliographie dans le traitement de texte
-[comment41]: <60> (TITRE1)
+[comment42]: <60> (TITRE1)
 
 
 ### <61>
