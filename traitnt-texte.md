@@ -4,18 +4,42 @@ date: 1er semestre 2022-2023
 author: Sébastien Biay
 ---
 
+Plan :
+
+1. [Introduction](#t1)
+	1. [Course de vitesse ! ](#t1-1)
+	2. [Structuration des textes sur le web ](#t1-2)
+	3. [Appliquer une feuille de style ](#t1-3)
+	4. [Insérer un commentaire ](#t1-4)
+2. [Étape 2](#t2)
+	1. [Modifier les styles ](#t2-1)
+	2. [Mettre en page un mémoire ](#t2-2)
+	3. [Préparer une table des matières ](#t2-3)
+	4. [Importer/exporter un style ](#t2-4)
+3. [Étape 3](#t3)
+	1. [Les premières pages du mémoire ](#t3-1)
+	2. [Table des illustrations ](#t3-2)
+
+[comment]: <> (FINET)
+
 [comment1]: <1> (Penser à installer mes dossiers )
 
 [comment2]: <1> (Présentation de la séance de rattrapage : )
 
-[comment3]: <1> (- Suivre le diaporama sur github : un lien dans le moodle)
+[comment3]: <1> (Installer Zotero)
 
-[comment4]: <1> (- possibilité de prendre en main Mac : mes notes sont dans fdr.md:60)
+[comment4]: <1> (- Suivre le diaporama sur github : un lien dans le moodle)
 
+[comment5]: <1> (- possibilité de prendre en main Mac : mes notes sont dans fdr.md:60)
+
+
+<a id='t1'/>
 
 # Introduction
-[comment5]: <1> (TITRE1)
+[comment6]: <1> (TITRE1)
 
+
+<a id='t1-1'/>
 
 ## Course de vitesse ! 
 
@@ -44,13 +68,14 @@ jusqu'à `[Fol. 109r]` \
 4. Prêtes ? Prêts ?
 
 
-
 ### <3>
 
 **Conclusion**
 
 Pour bien exploiter un logiciel de traitement de texte, il faut se servir de la **feuilles de style** (*stylesheet*) qui lui est associée.
 
+
+<a id='t1-2'/>
 
 ## Structuration des textes sur le web 
 
@@ -102,6 +127,8 @@ Tous les contenus que vous consultez sur le web sont structurés de cette façon
 **Les traitements de texte que vous produisez** fonctionnent de la même manière et sont fondés sur un langage cousin, le XML.
 
 
+<a id='t1-3'/>
+
 ## Appliquer une feuille de style 
 
 ### <8>
@@ -152,6 +179,8 @@ C'est le moment de **créer un style personnalisé** pour les citations que l'on
 4. Appliquer ce nouveau style aux autre paragraphes concernés de la suite du document.
 
 
+<a id='t1-4'/>
+
 ## Insérer un commentaire 
 
 ### <12>
@@ -163,59 +192,63 @@ Pour commenter un passage du texte, deux solutions sont possibles :
 2. Sélectionner la partie du texte problématique et écrire une bulle commentaire : **Insertion** > Commentaire
 
 
+<a id='t2'/>
+
 # Étape 2
-[comment10]: <12> (TITRE1)
+[comment11]: <12> (TITRE1)
 
-[comment11]: <12> (Reprise pour passer de l'étape 2 à 3)
+[comment12]: <12> (Reprise pour passer de l'étape 2 à 3)
 
-[comment12]: <12> (Faire appel aux styles de titres permet :)
+[comment13]: <12> (Faire appel aux styles de titres permet :)
 
-[comment13]: <12> (- De modifier de manière homogène la mise en forme)
+[comment14]: <12> (- De modifier de manière homogène la mise en forme)
 
-[comment14]: <12> (De répercuter les propriétés des styles sur leurs enfants : il y a des relations de hiérarchie entre les styles, les enfants héritent les caractères des parents)
+[comment15]: <12> (De répercuter les propriétés des styles sur leurs enfants : il y a des relations de hiérarchie entre les styles, les enfants héritent les caractères des parents)
 
-[comment15]: <12> (- De bien gérer les enchaînements de paragraphes --un style de titre est toujours collé au paragraphe suivant)
+[comment16]: <12> (- De bien gérer les enchaînements de paragraphes --un style de titre est toujours collé au paragraphe suivant)
 
-[comment16]: <12> (- De créer une table des matières)
+[comment17]: <12> (- De créer une table des matières)
 
-[comment17]: <12> (Auj. on va commencer par modifier ces styles en veillant à :)
+[comment18]: <12> (Auj. on va commencer par modifier ces styles en veillant à :)
 
-[comment18]: <12> (Utiliser la hiérarchie des styles, on veut passer Titre 1, 2 et 3 en Georgia, on va mettre tous les titres en Georgia au lieu de faire la même chose trois fois)
+[comment19]: <12> (Utiliser la hiérarchie des styles, on veut passer Titre 1, 2 et 3 en Georgia, on va mettre tous les titres en Georgia au lieu de faire la même chose trois fois)
 
-[comment19]: <12> (- Ne pas utiliser la touche entrée, car encore une fois on veut gérer proprement les enchaînements de paragraphes)
+[comment20]: <12> (- Ne pas utiliser la touche entrée, car encore une fois on veut gérer proprement les enchaînements de paragraphes)
 
-[comment20]: <12> (- Faire des modifications basiques sur les polices, les effets de caractères etc.)
+[comment21]: <12> (- Faire des modifications basiques sur les polices, les effets de caractères etc.)
 
-[comment21]: <12> (2^e^ chose. On a travaillé sur un document de type article ; mais ce qui nous intéresse c'est de faire un mémoire : on va travailler sur la mise en page.)
+[comment22]: <12> (2^e^ chose. On a travaillé sur un document de type article ; mais ce qui nous intéresse c'est de faire un mémoire : on va travailler sur la mise en page.)
 
-[comment22]: <12> (- Créer une page de titre, pour l'instant très basique, avec simplement un titre, on pourra l'élaborer plus tard)
+[comment23]: <12> (- Créer une page de titre, pour l'instant très basique, avec simplement un titre, on pourra l'élaborer plus tard)
 
-[comment23]: <12> (- Prévoir l'impression du mémoire recto-verso.)
+[comment24]: <12> (- Prévoir l'impression du mémoire recto-verso.)
 
-[comment24]: <12> (On entre dans de la typographie un peu spécifique : la mise en page d'imprimerie observe certaines règles pas évidentes à appliquer dans un traitement de texte basique.)
+[comment25]: <12> (On entre dans de la typographie un peu spécifique : la mise en page d'imprimerie observe certaines règles pas évidentes à appliquer dans un traitement de texte basique.)
 
-[comment25]: <12> (- Les **pages de titres** sont toujours à droite, même s'il faut laisser un blanc à gauche)
+[comment26]: <12> (- Les **pages de titres** sont toujours à droite, même s'il faut laisser un blanc à gauche)
 
-[comment26]: <12> (- La position des numéros alterne sur la page de droite et la page de gauche)
+[comment27]: <12> (- La position des numéros alterne sur la page de droite et la page de gauche)
 
-[comment27]: <12> (- Si on laisse un blanc avant une page de titre, il ne faut pas de numéro sur la page blanche)
+[comment28]: <12> (- Si on laisse un blanc avant une page de titre, il ne faut pas de numéro sur la page blanche)
 
-[comment28]: <12> (- Et on ne veut évidemment pas de numéro sur la première et c'est mieux de ne pas en avoir non plus sur les autres pages de titre)
+[comment29]: <12> (- Et on ne veut évidemment pas de numéro sur la première et c'est mieux de ne pas en avoir non plus sur les autres pages de titre)
 
-[comment29]: <12> (- On peut faire des titres courants : qui rappellent le chapitre et la sous partie)
+[comment30]: <12> (- On peut faire des titres courants : qui rappellent le chapitre et la sous partie)
 
-[comment30]: <12> (Pour faire tout cela on va utiliser des styles de pages : pour avoir une Première page qui sera le titre du mémoire, et une succession de page gauche et de page droite)
+[comment31]: <12> (Pour faire tout cela on va utiliser des styles de pages : pour avoir une Première page qui sera le titre du mémoire, et une succession de page gauche et de page droite)
 
-[comment31]: <12> (Une fois qu'on aura fait cela, on ajoutera à notre titre de Chapitre la mention « Chapitre 1 »)
+[comment32]: <12> (Une fois qu'on aura fait cela, on ajoutera à notre titre de Chapitre la mention « Chapitre 1 »)
 
-[comment32]: <12> (Puis on crééra la table des matières, à laquelle on donnera la même apparence qu'un Titre 1, mais si on en faisait un Titre 1 elle donnerait elle-même sa pagination.)
+[comment33]: <12> (Puis on crééra la table des matières, à laquelle on donnera la même apparence qu'un Titre 1, mais si on en faisait un Titre 1 elle donnerait elle-même sa pagination.)
 
+
+<a id='t2-1'/>
 
 ## Modifier les styles 
 
 ### <13>
 
-[comment34]: <13> (**ATTENTION** Il faudrait que j'intègre les propriétés de style dans les diapos : le document modèle parasite plutôt qu'autre chose.)
+[comment35]: <13> (**ATTENTION** Il faudrait que j'intègre les propriétés de style dans les diapos : le document modèle parasite plutôt qu'autre chose.)
 
 Vous avez sans doute déjà remarqué que les styles ont des relations hiérarchiques. 
 
@@ -277,8 +310,10 @@ Il ne faut pas sauter de lignes avec la touche Entrée, mais modifier le Titre 1
 
 - Terminer la mise en forme en modifiant le style **Citations langue étrangère** : italique.
 
-[comment35]: <18> (L'année prochaine, placer ici « Importer/exporter un style ».)
+[comment36]: <18> (L'année prochaine, placer ici « Importer/exporter un style ».)
 
+
+<a id='t2-2'/>
 
 ## Mettre en page un mémoire 
 
@@ -408,8 +443,10 @@ Vous pouvez transformer le document en pdf comme pour l'imprimer en recto-verso�
 
 La p. 2, verso de la page de titre, reste blanche et sans numéro pour que le chapitre commence sur la page impaire suivante.
 
-[comment37]: <28> (Faire un retour chariot pour le titre)
+[comment38]: <28> (Faire un retour chariot pour le titre)
 
+
+<a id='t2-3'/>
 
 ## Préparer une table des matières 
 
@@ -451,7 +488,7 @@ On va à présent ajouter la table des matières pour de bon.
 
 Nous avons une table des matières (TDM), collée à la fin de la bibliographie.
 
-On ne donne pas la page de la TDM dans la TDM. C'est logique ! Donc on ne veut pas transformer le titre de la TDM en Titre 1, car elle serait alors prise en compte et ajoutée.
+On ne donne pas la page de la TDM dans la TDM, c'est logique ! Donc on ne veut pas transformer le titre de la TDM en Titre 1, car elle serait alors prise en compte et ajoutée.
 
 De nouveaux styles de paragraphes sont apparus dans la liste des **Styles appliqués**, dont **Titre de table des matières**.
 
@@ -465,11 +502,13 @@ Modifier **Titre de table des matières** pour le faire ressembler au Titre 1 :
 		- Type : Page
 		- Position : Avant
 	- Avec le style de page : Première page
-- Police : Georgia, normal
+- Police : Georgia, normal, taille 28 pt
 - Retraits et espacement : 0,5 au-dessus ; 2 en-dessous
 - Effets de caractère : casse en Petites majuscules
 - Alignement : centrer
 
+
+<a id='t2-4'/>
 
 ## Importer/exporter un style 
 
@@ -496,3 +535,119 @@ On peut reprendre du Moodle le document `vertus-etape-2.odt` en cliquant [**ici*
 - Cliquer sur **Ecraser**, puis Ok.
 
 Est-ce que les styles ont bien été appliqués ?…
+
+
+<a id='t3'/>
+
+# Étape 3
+[comment41]: <35> (TITRE1)
+
+
+<a id='t3-1'/>
+
+## Les premières pages du mémoire 
+
+### <36>
+
+Si vous ouvrez un livre récent imprimé en France et que vous cherchez où est la p. 1 (en remontant depuis les premières pages numérotées), vous arriverez sans doute à la première feuille du livre.
+
+Cette p. 1 peut :
+
+1. Être blanche
+2. Présenter le seul titre de l'ouvrage : c'est ce qu'on appelle le **faux titre**
+
+
+### <37>
+
+La mise en page d'un mémoire peut faire abstraction de cela : notre p. 1 sera la **pièce de titre**.
+
+Comme le montre le fichier `vertus-etape-3.odt` (à télécharger [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/folder/view.php?id=265116)), elle rassemble les informations suivantes :
+
+1. En-tête : nom de l'institution
+2. Auteur
+3. Titre
+4. Sous-titre
+5. Un numéro de tome, car il y aura sans doute 3 tomes
+	1. Texte
+	2. Annexes
+	3. Illustrations
+5. Nom du directeur de mémoire
+6. Pied de page :
+	- La mention « Mémoire pour le master 1 “Histoire de l'art” »
+	- Année universitaire
+
+
+### <38>
+
+La pièce de titre du mémoire de M2 est un peu différente.
+
+Un M2 implique un jury, dont on précisera l'institution où exercent les membres lorsqu'il ne s'agit pas de l'UPJV.
+
+Voir le modèle [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=271015).
+
+
+<a id='t3-2'/>
+
+## Table des illustrations 
+
+### <39>
+
+Il est déconseillé d'insérer les illustrations dans le texte, car cela joue très souvent en défaveur de :
+
+- La qualité des reproductions (trop petites)
+- La facilité de consultation (allers-retours entre le texte et les images)
+- La bonne santé du fichier qui, très lourd, peut commencer à dysfonctionner.
+
+Il faut donc constituer un tome d'illustrations à part (autre fichier odt ou fichier créé par un logiciel de **PAO** = Publication Assistée par Ordinateur).
+
+
+### <40>
+
+Les logiciels de PAO les plus connus sont : 
+
+- Adobe InDesign
+- Microsoft Publisher
+- QuarkXPress
+- Scribus : **le seul gratuit** et pour PC comme pour Mac
+
+[comment44]: <40> (Scribus fonctionne également sous Ubuntu.)
+
+Vous voulez faire au plus simple ? LibreOffice Writer ou Word avec une seule image par page !
+
+
+### <41>
+
+Les illustrations étant hors du texte, on va gérer leur numérotation à partir de la **table des Illustrations** de notre document.
+
+- Ouvrir le fichier `vertus-etape-3.odt` (à télécharger [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/folder/view.php?id=265116)
+- Se rendre à la table des Illustrations : on peut cliquer sur **Page 1 de 33** en bas à gauche et taper **27**…
+- Sélectionner toutes les lignes de cette table et leur attribuer le style de paragraphe **Illustration** (Visible si l'on affiche tous les styles).
+
+
+### <42>
+
+Il faut quelque peu modifier ce style pour en faire une liste numérotée du type Fig. 1, Fig. 2, etc.
+
+Modifier le style **Illustration** avec les caractéristiques suivantes :
+
+- Police : Normal
+- Retraits et espacement :
+	- Avant le texte : 0 cm
+	- Première ligne : 0 cm
+- Plan & liste > Appliquer le style de liste > Numérotation 123
+- Éditer le style > Personnaliser
+	- Avant : Fig.
+	- Après : *rien*
+
+
+### <43>
+
+Maintenant que notre table des illustrations à correctement établie, on peut ajouter des renvois aux figures dans le texte.
+
+- Placer le curseur au point d'insertion souhaité dans le texte
+- Dans le menu principal : **Insertion** > Renvoi
+- Type : **Paragraphes numérotés**
+- Sélectionner la bonne figure
+- **Référer en utilisant** : Numéro (contexte complet)
+
+Si maintenant j'ajoute des éléments à ma table des illustrations, à chaque fois que j'enregristre le document, il met à jour les numéros.
