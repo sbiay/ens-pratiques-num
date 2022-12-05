@@ -43,7 +43,9 @@ Plan :
 
 ### <3>
 
-La pierre angulaire, c'est le **modèle tabulaire**.
+Beaucoup de données sont exposées sur le web sous la forme de **documents** au format **Json**, comme les ouvrages numérisés sur Gallica (un exemple [**ici**](https://gallica.bnf.fr/iiif/ark:/12148/btv1b60000317/manifest.json)).
+
+Mais la pierre angulaire du monde des bases de données, c'est le **modèle tabulaire**.
 
 
 <a id='t1-3'/>
@@ -52,7 +54,7 @@ La pierre angulaire, c'est le **modèle tabulaire**.
 
 ### <4>
 
-On démarre avec des données très simples à télécharger [**ici**](https://pedag.u-picardie.fr/moodle/upjv/pluginfile.php/952401/mod_folder/content/0/liste-etudiants-brut.ods?forcedownload=1)
+On démarre avec des données très simples à télécharger [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=278086)
 
 Un tableau présente trois éléments :
 
@@ -73,7 +75,7 @@ La puissance du tableau réside notamment dans la possibilité de **trier selon 
 
 ### <6>
 
-Ajoutons un attribut : la période de spécialisation des personnes
+Ajoutons un attribut : la **période** de spécialisation des personnes
 
 Il comporte quatre valeurs possibles :
 
@@ -114,13 +116,15 @@ Si maintenant je veux appliquer un **filtre** pour ne visualiser que les enregis
 
 ### <9>
 
-1. Fouiller des collections en utilisant les fitres ou facettes
+Nous allons concevoir une base de données sur le chat dans l'histoire de l'art. Chacun-e va remplir une mission de son choix (liste [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=278106)) :
+
+1. Fouiller des collections numériques en utilisant les **filtres ou facettes**, pour récolter **5 œuvres**
 2. Repérer le **permalien** (s'il existe) : une URL courte qui se termine par un identifiant pérenne
 3. Télécharger une image (si possible !)
 
 Il peut être utile de télécharger l'extension pour Firefox [**Dezoomify**](https://addons.mozilla.org/en-US/firefox/addon/dezoomify/) pour télécharger en HD si le site le ne propose pas.
 
-[comment7]: <9> (Éxemple d'une recherche dans les collections du Met avec le mot-clé « cat », puis le filtre sur la période 1400-1600.)
+[comment7]: <9> (Exemple d'une recherche dans les collections du Met avec le mot-clé « cat », puis le filtre sur la période 1400-1600.)
 
 [comment8]: <9> (L'URL contient dans sa chaîne de requêtes les arguments de ma recherche)
 
@@ -130,6 +134,8 @@ Il peut être utile de télécharger l'extension pour Firefox [**Dezoomify**](ht
 
 
 ### <10>
+
+Ce qu'il faut faire avec les données :
 
 1. Ajouter les permaliens dans le tableau partagé [**base.ods**](https://docs.google.com/spreadsheets/d/1jB7TmDyQ3jfdU1t5gppX3tuWLvry1_13vn-0OlHHLoc/edit#gid=87305927)
 
@@ -146,7 +152,7 @@ Il peut être utile de télécharger l'extension pour Firefox [**Dezoomify**](ht
 
 Le but de cette base de données est d'**analyser l'iconographie du chat à travers les époques de l'art**.
 
-Quels **attributs** seraient nécessaires pour décrire les objets que l'on a récolté et les représentations du chat qu'ils proposent ?
+Quels **attributs** seraient nécessaires pour décrire les objets que l'on a récoltés et les représentations du chat qu'ils proposent ?
 
 En bref, combien de **colonnes** avec quels intitulés faut-il ajouter à notre tableau pour cela ?
 
@@ -259,11 +265,13 @@ Une fois les clés étrangères renseignées :
 
 - Ils peuvent être très **abstraits**, comme `1`, `2`
 - On peut aussi les rendre **parlants**, en codant par exemple le nom du pays, de la ville et de l'institution sous forme de groupes de lettres :
-	- British museum. Londres : GB-LON-BMU
-	- Metropolitan museum of art. New York, N.Y. : US-NYO-MET
+	- British museum. Londres : `GB-LON-BMU`
+	- Metropolitan museum of art. New York, N.Y. : `US-NYO-MET`
 
 Cela permet de classer les enregistrements selon leur identifiant.
 
 **Attention** : il est toujours dangereux de changer les clés primaires d'une table ! Mieux vaut ajouter de nouveaux attributs dans cette table pour la trier selon de nouveaux critères.
 
 [comment14]: <19> (Pour la suite du cours : d'autres référentiels, pour les champs à utiliser, pour les techniques artistiques, etc.)
+
+[comment15]: <19> (Si je veux diviser le contenu de la colonne lieu de conservation, je peux le faire en fonciton du séparateur **point** : Données, Texte en colonnes.)
