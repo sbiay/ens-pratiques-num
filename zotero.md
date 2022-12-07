@@ -96,6 +96,8 @@ Une fois le Zotero Connector installé, une icône en forme de **Z** doit appara
 
 Au premier lancement, il va détecter la présence de LibreOffice et proposer l'installation d'une autre extension : **tout accepter** !
 
+En cas de problème avec l'installation de cette extension, la lecture de ce tutoriel est conseillée : J. Sauvage, « Zotero en pratique : installer le logiciel Zotero et créer son compte Zotero en ligne. Installer le plugin », *BU Université Rennes 2*, URL : [https://tutos.bu.univ-rennes2.fr/c.php?g=686436&p=4906338](https://tutos.bu.univ-rennes2.fr/c.php?g=686436&p=4906338), consulté le 7 décembre 2022.
+
 
 <a id='t1-2'/>
 
