@@ -14,7 +14,7 @@ Plan :
 	1. [Récolter des images dans les collections numériques ](#t2-1)
 	2. [Élaborer un modèle conceptuel de données ](#t2-2)
 	3. [Éditorialiser les données ](#t2-3)
-	4. [Créer une table secondaire ](#t2-4)
+	4. [Ecrire une formule pour concaténer plusieurs champs ](#t2-4)
 	5. [Élaborer un thésaurus personnel ](#t2-5)
 
 [comment]: <> (FINET)
@@ -184,7 +184,7 @@ La base **Agorha** de l'INHA est un excellent modèle francophone pour définir 
 	- Période de création (th^us^ [**ici**](https://thesaurus.inha.fr/thesaurus/page/ark:/54721/b9fff2ce-220d-4bcc-858d-776f21e2cd61))
 	- Lieu de création
 	- Personne liée à l'œuvre
-	- Rôle (th^us^ [**ici**](https://thesaurus.inha.fr/thesaurus/page/ark:/54721/284089a5-2287-47e2-b107-79c704802630))
+	- Rôle : voir notamment « degré d'attribution » (th^us^ [**ici**](https://thesaurus.inha.fr/thesaurus/page/ark:/54721/284089a5-2287-47e2-b107-79c704802630))
 
 Pour retrouver tous les thésaurus de l'INHA, voir [**ici**](https://thesaurus.inha.fr/thesaurus/page/vocabulaires).
 
@@ -269,115 +269,154 @@ Voir par exemple la notice du Metropolitan Museum [**ici**](https://data.bnf.fr/
 **C'est à vous !** Renseignez le lieu de conservation de votre premier enregistrement selon la forme donnée par Data-BnF.
 
 
-<a id='t2-4'/>
-
-## Créer une table secondaire 
-
 ### <20>
 
-**Niveau de sécurité n^o^ 3**
+Le format de données fourni par Data-BnF pose un problème.
 
-Si l'on est amené à avoir beaucoup de données et des données variées, il est utile de **les déporter dans une table secondaire**
-
-Dans cette table secondaire :
-
-- On attribue une **clé** à chaque lieu (par exemple `1`, `2`, etc.)
-- On place le **label** ou intitulé correspondant dans la colonne suivante
+On doit séparer le nom de l'institution et le nom de la ville pour rendre les données nucléaires.
 
 
 ### <21>
 
-On importe les données doublonnées dans la nouvelle feuille. Il faut à présent les **dédoublonner**.
+**Niveau de sécurité n^o^ 3**
 
-Pour supprimer les doublons d'une colonne : 
+Si l'on est amené à avoir beaucoup de données et des données variées, il est utile de **les déporter dans une table secondaire**.
 
-- Sous LibreOffice Calc : 
-	- Sélectionner la plage de données
-	- Menu principal : **Données** > Plus de filtres > Filtre standard
-	- Nom de champ : sélectionner **aucun(e)**
-	- Déplier les options : cocher **Sans doublons**
-	- Copier coller la liste désormais filtrée
+On verra cela plus loin…
 
-- Sous Google Sheet : 
-	- Sélectionner la plage de données
-	- Menu principal : **Données** > Nettoyage des données > Supprimer les doublons
+
+[comment13]: <21> (Fin de la 2^e^ séance)
 
 
 ### <22>
 
-Le format de données fourni par Data-BnF pose un problème…
+**Si je veux y voir plus clair, je masque** les colonnes qui vont me gêner. Dans LibreOffice Calc :
+
+- Cliquer droit sur la lettre d'une colonne > Masquer la colonne (par exemple **H** et **I**)
+
+Pour faire réapparaître les colonnes masquées :
+
+- Sélectionner les colonnes qui encadrent la ou les colonnes masquées
+- Cliquer droit sur la lettre d'une colonne de la sélection > Afficher les colonnes
 
 
 ### <23>
 
-Un jour, je vais vouloir que ma base de données écrive la légende des illustrations de mon mémoire à ma place.
+**Noms d'artistes**
 
-Pour cela je dois reprendre le contrôle sur la typographie : 
+Il peuvent poser des problèmes d'homonymie.
 
-- Rendre les données nucléaires en séparant le nom de l'institution et le nom de la ville dans deux colonnes : C pour le nom de l'institution et D pour la ville
-- Renseigner le label complet sous la forme d'une fonction qui regroupe les informations des deux colonnes : **`=D:D&“, ”&C:C`**
+- Chercher un nom dans le référentiel du Getty Institute, **Union List of Artist Names** accessible [**ici**](https://www.getty.edu/research/tools/vocabularies/ulan/) ou en cherchant du Google "getty ulan"
 
+- Inscrire le numéro d'identification dans la colonne **H**
+
+
+<a id='t2-4'/>
+
+## Ecrire une formule pour concaténer plusieurs champs 
 
 ### <24>
 
-On va a présent appeler le label du lieu de conservation dans la Feuille1.
+On va composer des **légendes** pour nos futures illustrations grâce à l'écriture de **formules**
 
-Dans la table principale :
+Si j'écris `R2` dans une case, la case affiche… `R2` ("bof")
 
-- On crée une colonne « Clé lieu conservation » en **E** pour saisir les clés de la table secondaire, dites **clés étrangères**
-- On crée une colonne « Label lieu conservation » en **F** où l'on **appellera** automatiquement les labels de la table secondaire
+Si j'écris `=R2` dans une case, la case affiche le contenu de la case F2 ("wouahou")
+
+- Ecrire dans la colonne **E**, à la ligne de votre première œuvre, le contenu de la colonne **R**
 
 
 ### <25>
 
-- Télécharger la feuille et l'ouvrir dans LibreOffice Calc
-- Dans la case **F2** qui correspond au premier enregistrement et à l'attribut « Label lieu conservation », coller la formule suivante : **`=RECHERCHEV(E:E;$Feuille2.A:Z;2;0)`**
-	- `=RECHERCHEV()` signifie que l'on écrit une fonction de Recherche Verticale
-	- `E2` est le **critère de recherche** ; il signifie : « on cherche la clé dans la case E2 »
-	- `$Feuille2.A:Z` est la **matrice** ; cela signifie : « l'info recherchée se trouve dans la Feuille2 entre les colonnes A et Z »
-	- `2` est l'**index** ; cela signifie : « l'info que je recherche est dans la 2^e^ colonne de la matrice »
-	- `0` est un booléen… peu importe !
+Pour « concaténer » le contenu des colonnes **R** (ville) et **P** (institution), dans la colonne **E**, j'écris, par exemple pour la ligne 2 : **`=R2&P2`**
 
 
 ### <26>
 
-**Choisir des identifiants**
+Il me faut un séparateur entre les deux données.
 
-- Ils peuvent être très **abstraits**, comme `1`, `2`
-- On peut aussi les rendre **parlants**, en codant par exemple le nom du pays, de la ville et de l'institution sous forme de groupes de lettres :
-	- British museum. Londres : `GB-LON-BMU`
-	- Metropolitan museum of art. New York, N.Y. : `US-NYO-MET`
+Il s'écrit entre **guillemets ""**.
 
-Cela permet de classer les enregistrements selon leur identifiant.
+La formule devient pour la ligne 2 : **`=R2&", "&P2`**
 
-**Attention** : il est toujours dangereux de changer les clés primaires d'une table ! Mieux vaut ajouter de nouveaux attributs dans cette table pour la trier selon de nouveaux critères.
+Continuons à écrire la légende en ajoutant la date, en format texte (colonne **L**) entre parenthèses. Essayez d'abord sans regarder la solution (diapo suivante)
+
+
+### <27>
+
+La solution était : **`=R2&", "&P2&" ("&L2&")"`**
+
+Ajoutons à présent au début de notre formule : 
+
+- **Auteur** (colonne **G**)  suivi d'une virgule ;
+- **Titre** (colonne **F**) suivi d'une virgule ;
+- **Type d'œuvre** (colonne **J**) suivi d'une virgule
+
+
+### <28>
+
+La solution était : **```=G2&", "&F2&", "&J2&", "&R2&", "&P2&" ("&L2&")"```**
+
+**Problème** : en l'absence de donnée, j'ai un **séparateur inutile**.
+
+
+### <29>
+
+On efface le début de la formule pour revenir à **```=" ("&L2&")"```**
+
+On utilise la fonction **TEXTJOIN**, qui s'appelle **JOINDRE.TEXTE** dans LibreOffice Calc.
+
+- Juste après le égal, on écrit **TEXTJOIN(**
+- On définit d'abord le délimiteur : `", "`
+- On tape **`;`** pour séparer les paramètres
+- **`1`** signifie **vrai** pour le paramètre **ignorer si vide** (en effet on veut ignorer les cases vides)
+- Puis on définit chaque case à appeler : pour la ligne 2 : **`G2;F2;J2;R2;P2`** (attention, ici ne pas utiliser `F:F;Q:Q`…)
+- On ferme la parenthèse et on ajoute **`&`** pour concaténer avec la suite de la formule
+
+
+### <30>
+
+Pour la ligne 2 du tableau, la formule serait :\
+**`=TEXTJOIN(", ";1;G2;F2;J2;R2;P2)&" ("&L2&")"`**
+
+
+### <31>
+
+Autre solution : **créer une fonction de condition**
+
+- On se dit la phrase suivante : *Si le contenu de la colonne F est égal à rien alors je veux afficher rien ; dans le cas contraire, je veux afficher la colonne F suivie de virgule espace*
+
+- Sa traduction en formule est : **`SI(G2="";"";G2&", ")`**
+
+Pour enchaîner **G** et **F** :\
+**`=SI(G2="";"";G2&", ")&F2`**
 
 
 <a id='t2-5'/>
 
 ## Élaborer un thésaurus personnel 
 
-### <27>
+### <32>
 
 L'intérêt de monter sa propre base de données rédise surtout dans la possibilité de **forger des catégories d'analyse**. Ce sera le cas pour le contenu iconographique de notre base.
 
 Le thésaurus **Iconclass** constitue un modèle intéressant (voir [**ici**](https://iconclass.org/help/outline)) avec sa structure en arborescence.
 
-Si l'on cherche « cat », on le trouve en plusieurs endroit du thésaurus. Son entrée principale ([**ici**](https://iconclass.org/34B12)) ne présente pas assez de variété pour couvrir tous nos besoins : il faut donc élaborer notre propre thésaurus.
+Si l'on cherche « cat », on le trouve en plusieurs endroits du thésaurus. Son entrée principale ([**ici**](https://iconclass.org/34B12)) ne présente pas assez de variété pour couvrir tous nos besoins : il faut donc élaborer notre propre thésaurus.
 
 
-### <28>
+### <33>
 
 Essayons de concevoir un ensemble de valeurs (ou catégories) qui décrivent dans nos objets *ce que les chats font* ou *comment ils sont représentés*.
 
 1. Cartographier les concepts (diagramme « patates »)
-2. Structurer les concepts en arborescence (liste à plusieurs niveaux, comme [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=279127))
+2. Structurer les concepts en arborescence (liste à plusieurs niveaux, comme [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=279130))
 3. Transposer cette arborescence dans une feuille de tableur ([**là**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=279142))
 
 
-### <29>
+### <34>
 
-Pour structurer une arborescence sous forme de liste, **LOW** peut faire l'affaire avec ses **listes ordonnées**.
+Pour structurer une arborescence sous forme de liste, **LibreOffice Writer** peut faire l'affaire avec ses **listes ordonnées** (raccourci : F12).
 
 Pour changer de niveau de numérotation : 
 
@@ -385,4 +424,4 @@ Pour changer de niveau de numérotation :
 - **Abaisser d'un niveau**
 
 
-[comment15]: <29> (Le problème des images se rattachant à plusieurs concepts)
+[comment16]: <34> (Le problème des images se rattachant à plusieurs concepts)
