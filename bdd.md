@@ -14,8 +14,9 @@ Plan :
 	1. [Récolter des images dans les collections numériques ](#t2-1)
 	2. [Élaborer un modèle conceptuel de données ](#t2-2)
 	3. [Éditorialiser les données ](#t2-3)
-	4. [Ecrire une formule pour concaténer plusieurs champs ](#t2-4)
+	4. [Écrire une formule pour concaténer plusieurs champs ](#t2-4)
 	5. [Élaborer un thésaurus personnel ](#t2-5)
+	6. [Tables secondaires et tables de relation ](#t2-6)
 
 [comment]: <> (FINET)
 
@@ -313,7 +314,7 @@ Il peuvent poser des problèmes d'homonymie.
 
 <a id='t2-4'/>
 
-## Ecrire une formule pour concaténer plusieurs champs 
+## Écrire une formule pour concaténer plusieurs champs 
 
 ### <24>
 
@@ -323,7 +324,7 @@ Si j'écris `R2` dans une case, la case affiche… `R2` ("bof")
 
 Si j'écris `=R2` dans une case, la case affiche le contenu de la case F2 ("wouahou")
 
-- Ecrire dans la colonne **E**, à la ligne de votre première œuvre, le contenu de la colonne **R**
+- Écrire dans la colonne **E**, à la ligne de votre première œuvre, le contenu de la colonne **R**
 
 
 ### <25>
@@ -398,7 +399,7 @@ Pour enchaîner **G** et **F** :\
 
 ### <32>
 
-L'intérêt de monter sa propre base de données rédise surtout dans la possibilité de **forger des catégories d'analyse**. Ce sera le cas pour le contenu iconographique de notre base.
+L'intérêt de monter sa propre base de données réside surtout dans la possibilité de **forger des catégories d'analyse**. Ce sera le cas pour le contenu iconographique de notre base.
 
 Le thésaurus **Iconclass** constitue un modèle intéressant (voir [**ici**](https://iconclass.org/help/outline)) avec sa structure en arborescence.
 
@@ -410,11 +411,20 @@ Si l'on cherche « cat », on le trouve en plusieurs endroits du thésaurus. S
 Essayons de concevoir un ensemble de valeurs (ou catégories) qui décrivent dans nos objets *ce que les chats font* ou *comment ils sont représentés*.
 
 1. Cartographier les concepts (diagramme « patates »)
-2. Structurer les concepts en arborescence (liste à plusieurs niveaux, comme [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=279130))
-3. Transposer cette arborescence dans une feuille de tableur ([**là**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=279142))
+2. Structurer les concepts en arborescence
+3. Transposer cette arborescence dans une feuille de tableur
 
 
 ### <34>
+
+**Étape 1 : cartographier les concepts**
+
+![Dégager des thèmes de plus en plus englobant](img/demos_20230103_180332.jpg)
+
+
+### <35>
+
+**Étape 2 : structurer les concepts en arborescence**
 
 Pour structurer une arborescence sous forme de liste, **LibreOffice Writer** peut faire l'affaire avec ses **listes ordonnées** (raccourci : F12).
 
@@ -423,5 +433,77 @@ Pour changer de niveau de numérotation :
 - Menu pricipal : **Format** > Listes
 - **Abaisser d'un niveau**
 
+Pour changer les numérotations des niveaux :
 
-[comment16]: <34> (Le problème des images se rattachant à plusieurs concepts)
+- Menu pricipal : **Format** > Puces et numérotation
+
+Voir la liste à plusieurs niveaux [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=279130).
+
+
+### <36>
+
+**Étape 3 : Transposer cette arborescence dans une feuille de tableur**
+
+Voir le tableau [**là**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=279142).
+
+
+<a id='t2-6'/>
+
+## Tables secondaires et tables de relation 
+
+### <37>
+
+On va a présent appeler les informations du thésaurus **sujets** dans le tableau des œuvres.
+
+Dans la table principale :
+
+- On crée une colonne « Sujet-clé » en **U** pour saisir les clés de la table secondaire, dites **clés étrangères**
+- On crée une colonne « Sujet-code » en **V** et une colonne « Sujet-label » en **W** où l'on **appellera** automatiquement les labels de la table secondaire
+
+
+### <38>
+
+Il faut a présent remplir manuellement la colonne **U** : les clés étrangères des sujets.
+
+Pour aller chercher, dans la colonne **V**, les codes correspondants (qui se trouvent dans la 2^e^ colonne de la feuille `sujets`), il faut inscrire la formule suivante, par exemple pour la ligne 2 : 
+
+- Sous Google Sheets : **`=RECHERCHEV(U3;sujets!A:C;2;0)`**
+- Sous LibreOffice Calc : **`=RECHERCHEV(E:E;$sujets.A:C;2;0)`**
+
+
+### <39>
+
+On vient donc d'associer notre table des œuvres (`Feuille1`) à une **table secondaire** (`sujets`).
+
+On peut ainsi associer *à chaque œuvre un sujet unique*.
+
+Les tables secondaires offrent une vraie **sécurité** aux données : je peux mettre à jour les labels et les codes sans risque pour la cohérence de mes données.
+
+
+### <40>
+
+**Comment faire si une œuvre doit avoir plusieurs sujets ?**
+
+C'est ce que dans le jargon des bases de données on appelle la **cardinalité** (voir définition sur Wikipédia [**ici**](https://fr.wikipedia.org/wiki/Cardinalit%C3%A9_(programmation)).
+
+Quand on élabore une base de données, et qu'il faut concevoir des tables secondaires, il faut toujours se poser ce type de question :
+
+- Une œuvre peut-elle avoir plusieurs…
+	- Lieu de conservation ?
+	- Sujet ?
+	- Titre ?
+	- Auteur ?
+	- Etc.
+
+
+### <41>
+
+Chaque fois que la réponse est "plusieurs", il faut élaborer une **table de relation**
+
+Créons donc une nouvelle feuille intitulée **`relation-oeuvres-sujets`** avec les colonnes suivantes :
+
+- **A** : Sujet-clé
+- **B** : Sujet-code : `=RECHERCHEV(A2;sujets!A:C;2;0)`
+- **C** : Sujet-label : `=RECHERCHEV(A2;sujets!A:C;3;0)`
+- **D** : Oeuvre-clé : 
+- **E** : Oeuvre-légende : `=RECHERCHEV(D2;Feuille1!A:Z;5;0)`
