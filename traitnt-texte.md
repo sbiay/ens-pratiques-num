@@ -1,6 +1,6 @@
 ---
 title: Traitement de texte
-date: 1er semestre 2022-2023
+date: 1^er^ semestre 2022-2023
 author: Sébastien Biay
 ---
 
@@ -46,7 +46,7 @@ Plan :
 ### <2>
 
 
-![Code en roman, BnF, fr. 1069](img/fr-1069-code-roman-f_fol-001r-.jpg)
+![Code en roman, BnF, fr\. 1069<a date='sans'/>](img/fr-1069-code-roman-f_fol-001r-.jpg)
 
 **Une prédiction HTR**
 
@@ -62,7 +62,8 @@ C'est la transcription automatique d'un manuscrit complet à partir des photos d
 
 3. Pour améliorer la mise en page du document, on veut mettre toutes les mentions \
 `[Fol. 1r]`, `[Fol. 1v]`, etc. \
-jusqu'à `[Fol. 109r]` \
+jusqu'à `[Fol.
+109r]` \
 **en gras et en taille 16 pt**.
 
 4. Prêtes ? Prêts ?
@@ -87,7 +88,8 @@ Le dossier `f844_site` contient tous les fichiers qui constituent **un site web*
 
 2. Extraire le contenu
 
-3. Ouvrir **Firefox**. Dans Firefox, faire Cmd + O sur Mac ou Ctrl + O sur PC pour ouvrir un fichier
+3. Ouvrir **Firefox**.
+Dans Firefox, faire Cmd + O sur Mac ou Ctrl + O sur PC pour ouvrir un fichier
 
 4. Naviguer dans les dossiers pour ouvrir le fichier `f844_site/html/fr844-accueil.html`.
 
@@ -102,7 +104,7 @@ La page affichée présente un manuscrit contenant des chansonniers médiévaux.
 
 Il y a plusieurs niveaux de titres : 
 
-1. Le grand titre de la page : *Le Manuscrit du Roi (Paris BnF fr. 844) 1260-1325*
+1. Le grand titre de la page : *Le Manuscrit du Roi (Paris BnF fr\. 844) 1260-1325*
 
 2. Des titres de parties : *Description matérielle*
 
@@ -124,8 +126,7 @@ Les éléments `<h1>`, `<h2>` constituent des **balises** des titres, et selon l
 
 Tous les contenus que vous consultez sur le web sont structurés de cette façon, en langage **HTML**.
 
-**Les traitements de texte que vous produisez** fonctionnent de la même manière et sont fondés sur un langage cousin, le XML.
-
+**Les traitements de texte que vous produisez** fonctionnent de la même manière et sont fondés sur un langage cousin, le XML. 
 
 <a id='t1-3'/>
 
@@ -168,7 +169,8 @@ Appliquer aussi :
 
 ### <11>
 
-C'est le moment de **créer un style personnalisé** pour les citations que l'on veut rendre en italique (p. 5 du pdf, et il y en a d'autres après).
+C'est le moment de **créer un style personnalisé** pour les citations que l'on veut rendre en italique (p.
+5 du pdf, et il y en a d'autres après).
 
 1. Sélectionner le morceau de texte concerné
 
@@ -187,7 +189,7 @@ C'est le moment de **créer un style personnalisé** pour les citations que l'on
 
 Pour commenter un passage du texte, deux solutions sont possibles :
 
-1. Ecrire son commentaire dans le texte en appliquant un **style de caractère** particulier, par exemple **Accentuation forte**.
+1. Écrire son commentaire dans le texte en appliquant un **style de caractère** particulier, par exemple **Accentuation forte**.
 
 2. Sélectionner la partie du texte problématique et écrire une bulle commentaire : **Insertion** > Commentaire
 
@@ -319,14 +321,15 @@ Il ne faut pas sauter de lignes avec la touche Entrée, mais modifier le Titre 1
 
 ### <19>
 
-On a désormais une mise en page très satisfaisante pour un article de revue. Mais un mémoire est une composition plus complexe : avec plusieurs chapitres, une table des matières, etc.
+On a désormais une mise en page très satisfaisante pour un article de revue.
+Mais un mémoire est une composition plus complexe : avec plusieurs chapitres, une table des matières, etc.
 
 On imagine que notre **Titre 1** est un titre de chapitre
 
 Il faut à présent créer une **page de titre** pour l'ensemble du mémoire :
 
 - Sauter une ligne avant *Réinventer les Vertus à Cluny*
-- Ecrire un titre de mémoire (réel ou inventé)
+- Écrire un titre de mémoire (réel ou inventé)
 - Chercher parmi tous les styles de paragraphes préexistants **Titre principal** et l'appliquer au titre du mémoire
 
 
@@ -360,7 +363,8 @@ Désormais la première page (impaire) est suivie d'une alternance de **Page gau
 
 ### <22>
 
-Nos débuts de chapitres, table des ill. et biblio, bref, les **Titre 1** doivent toujours être placés à droite et se comporter comme la première page
+Nos débuts de chapitres, table des ill.
+et biblio, bref, les **Titre 1** doivent toujours être placés à droite et se comporter comme la première page
 
 - Modifier le Titre 1
 - **Enchaînements** > Sauts > Avec le style de page > Première page
@@ -368,12 +372,14 @@ Nos débuts de chapitres, table des ill. et biblio, bref, les **Titre 1** doiven
 
 ### <23>
 
-Afin de faire apparaître un **titre courant** pour nos chapitres, pour la biblio, etc. en haut des pages, il faut définir une **numérotation des chapitres**.
+Afin de faire apparaître un **titre courant** pour nos chapitres, pour la biblio, etc.
+en haut des pages, il faut définir une **numérotation des chapitres**.
 
 - **Outils** > Numérotation des chapitres
 - Style de paragraphe > Titre 1
 
-Mais comme cela compliquerait beaucoup la gestion du document, on crée cette numérotation mais on ne l'affiche pas (pour ne pas se retrouver avec « Chapitre 2 Bibliographie » !). Donc, toujours dans le menu Numérotation des chapitres :
+Mais comme cela compliquerait beaucoup la gestion du document, on crée cette numérotation mais on ne l'affiche pas (pour ne pas se retrouver avec « Chapitre 2 Bibliographie » !).
+Donc, toujours dans le menu Numérotation des chapitres :
 
 - Nombre : Aucun
 
@@ -581,8 +587,7 @@ Comme le montre le fichier `vertus-etape-3.odt` (à télécharger [**ici**](http
 
 La pièce de titre du mémoire de M2 est un peu différente.
 
-Un M2 implique un jury, dont on précisera l'institution où exercent les membres lorsqu'il ne s'agit pas de l'UPJV.
-
+Un M2 implique un jury, dont on précisera l'institution où exercent les membres lorsqu'il ne s'agit pas de l'UPJV. 
 Voir le modèle [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=271015).
 
 
@@ -626,7 +631,7 @@ Les illustrations étant hors du texte, on va gérer leur numérotation à parti
 
 ### <42>
 
-Il faut quelque peu modifier ce style pour en faire une liste numérotée du type Fig. 1, Fig. 2, etc.
+Il faut quelque peu modifier ce style pour en faire une liste numérotée du type Fig\. 1, Fig\. 2, etc.
 
 Modifier le style **Illustration** avec les caractéristiques suivantes :
 

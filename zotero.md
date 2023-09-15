@@ -1,6 +1,6 @@
 ---
 title: Créer une collection bibliographique
-date: 1er semestre 2022-2023
+date: 1^er^ semestre 2022-2023
 author: Sébastien Biay
 ---
 
@@ -50,7 +50,7 @@ On y ajoutera nos références bibliographiques.
 
 [comment5]: <2> (Par rapport à où on en était resté :)
 
-[comment6]: <2> (- Des choix typographiques améliorés, validés par P. Sénéchal)
+[comment6]: <2> (- Des choix typographiques améliorés, validés par P\. Sénéchal)
 [comment7]: <2> (- Une pièce de titre qui peut vous servir de modèle)
 [comment8]: <2> (- Une succession d'annexes introductives)
 [comment9]: <2> (- Vous n'êtes pas obligés d'avoir une dédicace, mais des remerciements oui --en général on commence par le directeur de mémoire.)
@@ -96,7 +96,8 @@ Une fois le Zotero Connector installé, une icône en forme de **Z** doit appara
 
 Au premier lancement, il va détecter la présence de LibreOffice et proposer l'installation d'une autre extension : **tout accepter** !
 
-En cas de problème avec l'installation de cette extension, la lecture de ce tutoriel est conseillée : J. Sauvage, « Zotero en pratique : installer le logiciel Zotero et créer son compte Zotero en ligne. Installer le plugin », *BU Université Rennes 2*, URL : [https://tutos.bu.univ-rennes2.fr/c.php?g=686436&p=4906338](https://tutos.bu.univ-rennes2.fr/c.php?g=686436&p=4906338), consulté le 7 décembre 2022.
+En cas de problème avec l'installation de cette extension, la lecture de ce tutoriel est conseillée : J. Sauvage, « Zotero en pratique : installer le logiciel Zotero et créer son compte Zotero en ligne.
+Installer le plugin », *BU Université Rennes 2*, URL : [https://tutos.bu.univ-rennes2.fr/c.php?g=686436&p=4906338](https://tutos.bu.univ-rennes2.fr/c.php?g=686436&p=4906338), consulté le 7 décembre 2022.
 
 
 <a id='t1-2'/>
@@ -246,7 +247,7 @@ La mise à jour a bien fonctionné ?
 
 **Soyons fous !** Faisons-le pour voir…
 
-- Ecrire quelque chose au milieu d'une référence
+- Écrire quelque chose au milieu d'une référence
 - Cliquer sur **Refresh**
 
 Un message d'alerte est donné :
@@ -286,7 +287,7 @@ Deux solutions :
 
 	- Menu principal de LibreOffice Writer : **Insertion**
 	- Note de bas de page / de fin > Note de bas de page
-	- Ecrire le petit texte, par ex. *Pour une analyse approfondie de cette question, voir*
+	- Écrire le petit texte, par ex. *Pour une analyse approfondie de cette question, voir*
 	- Insérer la référence avec Zotero
 
 2. Si la note est déjà créée avec ses références
@@ -399,7 +400,8 @@ Pour sauvegarder notre bibliothèque :
 
 - Dans le menu principal, cliquer sur **Fichier** > Exporter la bibliothèque
 
-Les formats proposés sont multiples ; quel que soit le format choisi, il permet de convertir tout la bibliothèque dans un fichier et de le réimporter si besoin. **Zotero RDF** est tout de même le plus indiqué.
+Les formats proposés sont multiples ; quel que soit le format choisi, il permet de convertir tout la bibliothèque dans un fichier et de le réimporter si besoin.
+**Zotero RDF** est tout de même le plus indiqué.
 
 
 ### <26>
@@ -451,7 +453,8 @@ Avant d'ajouter plein de références à la bibliothèque, il est utile de crée
 Deux choses à noter :
 
 1. `Ma bibliothèque` contiendra toujours l'intégralité des références.
-2. Dans une collection, on peut faire un clic droit sur une ou plusieurs réf. et **Retirer le document de la collection** sans le supprimer de `Ma bibliothèque`
+2. Dans une collection, on peut faire un clic droit sur une ou plusieurs réf.
+et **Retirer le document de la collection** sans le supprimer de `Ma bibliothèque`
 
 
 ### <30>
@@ -480,8 +483,7 @@ C'est par ce système des sous-collections que l'on sera le plus efficace.
 
 **Où puis-je consulter cette référence ?**
 
-*Données nouvelles sur la bibliothèque des Cisterciens de Notre-Dame de l'Étoile au XVII^e^ siècle* /
-Claude Garda,\
+*Données nouvelles sur la bibliothèque des Cisterciens de Notre-Dame de l'Étoile au XVII^e^ siècle* / Claude Garda,\
 Association pour la Sauvegarde de l'abbaye de l'Étoile, 2008.
 
 Prenez un moment pour chercher dans quelle bibliothèque elle est disponible.
@@ -489,10 +491,10 @@ Prenez un moment pour chercher dans quelle bibliothèque elle est disponible.
 
 ### <32>
 
-On peut accéder à sa notice dans le **SUDOC** en cliquant [**ici**](	
-https://www.sudoc.fr/224675664)
+On peut accéder à sa notice dans le **SUDOC** en cliquant [**ici**](	 https://www.sudoc.fr/224675664)
 
-Comme vous le savez sans doute, le SUDOC est le catalogue collectif des bibliothèques de l’Enseignement Supérieur. Il permet d'accéder aux notices d'ouvrages que, pour la plupart, vous pouvez **emprunter** via le service du **PEB**.
+Comme vous le savez sans doute, le SUDOC est le catalogue collectif des bibliothèques de l’Enseignement Supérieur.
+Il permet d'accéder aux notices d'ouvrages que, pour la plupart, vous pouvez **emprunter** via le service du **PEB**.
 
 Pour une vue plus complète des collections françaises, incluant la Bibliothèque nationale, utiliser le **CCFR,\
 Catalogue collectif de France**, accessible [**ici**](https://ccfr.bnf.fr/)
@@ -558,7 +560,8 @@ Toutes ces données sont exprimées dans des balises identiques : `<meta name="
 
 **Règles d'or**
 
-1. Lorsque que l'on veut récupérer la réf. d'une **monographie**, **BnF-CG** est notre meilleur ami
+1. Lorsque que l'on veut récupérer la réf.
+d'une **monographie**, **BnF-CG** est notre meilleur ami
 
 2. **Kubikat** reste l'une des meilleures bibliographies spécialisées en histoire de l'art : il faut donc l'utiliser malgré ses défauts
 
@@ -588,7 +591,8 @@ Pour faire une recherche efficace, il peut donc être utile de jongler entre plu
 4. Possiblité d'accéder au texte intégral des articles
 
 **Kubikat** est très fort sur les deux premiers points ;\
-La **bib. de l'INHA** est très forte sur les deux derniers\
+La **bib.
+de l'INHA** est très forte sur les deux derniers\
 (abonnement gratuit à partir du M1)
 
 
@@ -608,7 +612,9 @@ Aucun import automatique dans Zotero n'est parfait : il faut toujours **passer 
 
 ### <42>
 
-D'autre part, lorsque l'on importe une réf. par son **ISBN**, le catalogue sollicité est celui de la **Library of Congress** (USA). Selon l'usage anglo-américain, il n'y a donc pas d'**espace insécable** avant les deux points : il faudra l'ajouter.
+D'autre part, lorsque l'on importe une réf.
+par son **ISBN**, le catalogue sollicité est celui de la **Library of Congress** (USA).
+Selon l'usage anglo-américain, il n'y a donc pas d'**espace insécable** avant les deux points : il faudra l'ajouter.
 
 Pour ajouter une espace insécable :
 
@@ -620,10 +626,10 @@ Pour ajouter une espace insécable :
 
 Repartons d'une collection bibliographique un peu propre.
 
-- Dans la collection `td-numerique` > `sources`, on ne conserve que *L’abbaye de Fleury en l’an mil* importé depuis BnF-CG.
-- La collection  `td-numerique` > `etudes`
+- Dans la collection `td-numerique` > `sources`, on ne conserve que *L’abbaye de Fleury en l’an mil* importé depuis BnF-CG. - La collection  `td-numerique` > `etudes`
 
-Faisons une recherche complémentaire sur l'**abbaye de Fleury** (auj. Saint-Benoît-sur-Loire) et le rôle de l'un de ses abbés importants : **Gauzlin**.
+Faisons une recherche complémentaire sur l'**abbaye de Fleury** (auj.
+Saint-Benoît-sur-Loire) et le rôle de l'un de ses abbés importants : **Gauzlin**.
 
 Dans **Kubikat**, rechercher « saint-benoît-sur-loire gauzlin ».
 
@@ -634,13 +640,15 @@ On doit obtenir trois références.
 
 ### <44>
 
-La première réf. a pour auteur **Franzé, Barbara**.
+La première réf.
+a pour auteur **Franzé, Barbara**.
 
 - Ouvrir cette réf. dans un nouvel onglet :
 	- Mac OS : **Cmd + Clic** (?)
 	- Win : Ctrl + Clic
 
-Il s'agit d'un **chapitre** dans une monographie. Pas de chance, elle n'est pas dans les collections de la BnF, mais on va pouvoir la récupérer par l'**ISBN** :
+Il s'agit d'un **chapitre** dans une monographie.
+Pas de chance, elle n'est pas dans les collections de la BnF, mais on va pouvoir la récupérer par l'**ISBN** :
 
 - Dans la notice, cliquer sur **Lien vers la source** (là aussi mieux vaut ouvrir dans un nouvel onglet, car on va très vite revenir à la notice du chapitre)
 - Copier l'ISBN
@@ -662,7 +670,8 @@ Une fois la monographie importée dans Zotero, il y a du nettoyage à faire dans
 
 ### <46>
 
-Maintenant que la réf. de la monographie est propre, on peut créer celle du chapitre :
+Maintenant que la réf.
+de la monographie est propre, on peut créer celle du chapitre :
 
 - Cliquer droit sur la réf. > **Dupliquer le document**
 - Dans la nouvelle réf. changer le **Type de document** > Chapitre de livre
@@ -671,12 +680,16 @@ Maintenant que la réf. de la monographie est propre, on peut créer celle du ch
 	- Auteur : dans Zotero on ajoute bien un auteur et pas un éditeur comme ceux qui existent déjà, cliquer sur Éditeur pour afficher le menu)
 	- Pages
 
-Enfin, **on retire la réf. de la monographie** *Art, architecture…* de cette collection : Clic droit > Retirer le doc. de la collection
+Enfin, **on retire la réf.
+de la monographie** *Art, architecture…* de cette collection : Clic droit > Retirer le doc.
+de la collection
 
 
 ### <47>
 
-Revenons aux résultats de notre recherche. Les réf. 2 et 3 sont des articles parus sous l'égide de la Société Nationale des Antiquaires de France.
+Revenons aux résultats de notre recherche.
+Les réf.
+2 et 3 sont des articles parus sous l'égide de la Société Nationale des Antiquaires de France.
 
 **Réflexe à avoir** : les revues des sociétés savantes françaises sont largement accessibles via le portail **Persée**, [**ici**](https://www.persee.fr/).
 
@@ -713,7 +726,8 @@ Laissons tomber le 2^e^ résultat que nous donnait Kubikat et complétons la re
 
 ### <50>
 
-En fait il manque la pagination de l'article. Mais laissons-tomber ! et considérons que cette recherche est finie.
+En fait il manque la pagination de l'article.
+Mais laissons-tomber ! et considérons que cette recherche est finie.
 
 Le temps passe et au fil de nos recherches, les références s'accumulent…
 
@@ -745,7 +759,8 @@ Comment retrouver les références qui concernent l'abbaye sachant que selon, le
 
 ### <52>
 
-Comme toute nos réf. avaient « Gauzlin » dans le titre, on peut les retrouver facilement toutes les trois.
+Comme toute nos réf.
+avaient « Gauzlin » dans le titre, on peut les retrouver facilement toutes les trois.
 
 - Taper « Gauzlin » dans le champ de recherche de Zotero
 - Cliquer sur le chapitre de **Franzé**
@@ -786,7 +801,8 @@ Je vous conseille de ne pas récupérer automatiquement les marqueurs lors de l'
 
 ### <55>
 
-Gérer des marqueurs demande beaucoup de constance. Notre objectif ici est de retravailler ponctuellement sur l'abbaye Saint-Benoît-sur-Loire.
+Gérer des marqueurs demande beaucoup de constance.
+Notre objectif ici est de retravailler ponctuellement sur l'abbaye Saint-Benoît-sur-Loire.
 
 Mettons que l'on n'ait pas créé de marqueur :
 
@@ -830,7 +846,7 @@ Ou touche à ses limites lorsqu'il s'agit de **citer une source éditée dans un
 
 Pour citer une source de ce recueil, par exemple *Vita et passio sancti Abbonis* par Aimoin de Fleury, p. 25-38 (cette pagination est fausse), je dois adopter la typographie suivante :
 
-- Aimoin de Fleury, *Vita et passio sancti Abbonis*, éd. Robert-Henri Bautier, Gillette Tyl-Labory, dans *L’abbaye de Fleury en l’an mil*, éd. Robert-Henri Bautier, Gillette Tyl-Labory, Anselme Davril, Lin Donnat, Paris, CNRS éd, 2004 (Sources d’histoire médiévale, 32), p. 25-38.
+- Aimoin de Fleury, *Vita et passio sancti Abbonis*, éd\. Robert-Henri Bautier, Gillette Tyl-Labory, dans *L’abbaye de Fleury en l’an mil*, éd\. Robert-Henri Bautier, Gillette Tyl-Labory, Anselme Davril, Lin Donnat, Paris, CNRS éd, 2004 (Sources d’histoire médiévale, 32), p. 25-38.
 
 Le titre du texte ET le titre de la monographie doivent être en italique.
 
@@ -856,10 +872,11 @@ Pour créer la notice particulière de notre source, il faut :
 - Changer les « Éditeurs » en **Directeur de coll.** : ce sont les éditeurs scientifiques de l'ouvrage dans son ensemble
 - Ajouter comme « Éditeurs » : Bautier et Tyl-Labory, ce sont les éditeurs du texte en particulier
 - Déplacer le titre « L'abbaye de Fleury en l'an mil » dans **Titre du dict.**
-- Ecrire « Vita et passio sancti Abbonis » dans Titre
+- Écrire « Vita et passio sancti Abbonis » dans Titre
 - Compléter **Pages** : 25-38
 
-Contrôler le résultat en citant la réf. dans le traitement de texte.
+Contrôler le résultat en citant la réf.
+dans le traitement de texte.
 
 
 <a id='t4'/>
@@ -870,7 +887,7 @@ Contrôler le résultat en citant la réf. dans le traitement de texte.
 
 ### <61>
 
-Pour mettre en forme la bibliographie à la fin de votre mémoire, on ne fera pas appel au bouton **Add/Édit Bibliography** dnas le traitement de texte, car on mélangerait alors sources et études.
+Pour mettre en forme la bibliographie à la fin de votre mémoire, on ne fera pas appel au bouton **Add/Édit Bibliography** dans le traitement de texte, car on mélangerait alors sources et études.
 
 - Supprimer le contenu de la bibliographie de `vertus-etape-3.odt`
 - Créer des Titre 2 pour « Sources » et pour « Études »

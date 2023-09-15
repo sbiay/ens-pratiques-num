@@ -1,6 +1,6 @@
 ---
 title: Créer une base de données relationnelle
-date: 1er semestre 2022-2023
+date: 1^er^ semestre 2022-2023
 author: Sébastien Biay
 ---
 
@@ -118,7 +118,8 @@ Si maintenant je veux appliquer un **filtre** pour ne visualiser que les enregis
 
 ### <9>
 
-Nous allons concevoir une base de données sur le chat dans l'histoire de l'art. Chacun-e va remplir une mission de son choix (liste [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=278106)) :
+Nous allons concevoir une base de données sur le chat dans l'histoire de l'art.
+Chacun-e va remplir une mission de son choix (liste [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=278106)) :
 
 1. Fouiller des collections numériques en utilisant les **filtres ou facettes**, pour récolter **5 œuvres**
 2. Repérer le **permalien** (s'il existe) : une URL courte qui se termine par un identifiant pérenne
@@ -161,7 +162,8 @@ En bref, combien de **colonnes** avec quels intitulés faut-il ajouter à notre 
 
 ### <12>
 
-La base **Agorha** de l'INHA est un excellent modèle francophone pour définir la liste et les noms des attributs (voir une statuette égyptienne [**ici**](https://agorha.inha.fr/ark:/54721/64706557-e7ad-4e92-8361-3427c89882b0) ou un tableau du XVI^e^-XVII^e^ s. [**là**](https://agorha.inha.fr/ark:/54721/14f34326-2b28-493e-89be-31f2f5830311)) :
+La base **Agorha** de l'INHA est un excellent modèle francophone pour définir la liste et les noms des attributs (voir une statuette égyptienne [**ici**](https://agorha.inha.fr/ark:/54721/64706557-e7ad-4e92-8361-3427c89882b0) ou un tableau du XVI^e^-XVII^e^ s.
+[**là**](https://agorha.inha.fr/ark:/54721/14f34326-2b28-493e-89be-31f2f5830311)) :
 
 - Identification :
 	- Type d'œuvre (voir le thésaurus [**ici**](https://thesaurus.inha.fr/thesaurus/page/ark:/54721/8e09cc44-abef-4f14-9761-6c9cb3f63b2d))
@@ -212,7 +214,7 @@ Par exemple « 1750-1800 (circa) (circa) » pour [**cette œuvre**](https://ww
 Pour pouvoir exploiter les données,\
 il faut les rendre **nucléaires**
 
-![](/home/sbiay/ater/M1NUM/demos/nucleaire.jpg)
+![<a date='sans'/>](img/demos_nucleaire.jpg)
 
 1. Date de début
 2. Date de fin
@@ -267,8 +269,7 @@ Le site dédié est **Data-BnF** : [https://data.bnf.fr](https://data.bnf.fr)
 
 Voir par exemple la notice du Metropolitan Museum [**ici**](https://data.bnf.fr/fr/11870475)
 
-**C'est à vous !** Renseignez le lieu de conservation de votre premier enregistrement selon la forme donnée par Data-BnF.
-
+**C'est à vous !** Renseignez le lieu de conservation de votre premier enregistrement selon la forme donnée par Data-BnF. 
 
 ### <20>
 
@@ -340,7 +341,8 @@ Il s'écrit entre **guillemets ""**.
 
 La formule devient pour la ligne 2 : **`=R2&", "&P2`**
 
-Continuons à écrire la légende en ajoutant la date, en format texte (colonne **L**) entre parenthèses. Essayez d'abord sans regarder la solution (diapo suivante)
+Continuons à écrire la légende en ajoutant la date, en format texte (colonne **L**) entre parenthèses.
+Essayez d'abord sans regarder la solution (diapo suivante)
 
 
 ### <27>
@@ -399,11 +401,13 @@ Pour enchaîner **G** et **F** :\
 
 ### <32>
 
-L'intérêt de monter sa propre base de données réside surtout dans la possibilité de **forger des catégories d'analyse**. Ce sera le cas pour le contenu iconographique de notre base.
+L'intérêt de monter sa propre base de données réside surtout dans la possibilité de **forger des catégories d'analyse**.
+Ce sera le cas pour le contenu iconographique de notre base.
 
 Le thésaurus **Iconclass** constitue un modèle intéressant (voir [**ici**](https://iconclass.org/help/outline)) avec sa structure en arborescence.
 
-Si l'on cherche « cat », on le trouve en plusieurs endroits du thésaurus. Son entrée principale ([**ici**](https://iconclass.org/34B12)) ne présente pas assez de variété pour couvrir tous nos besoins : il faut donc élaborer notre propre thésaurus.
+Si l'on cherche « cat », on le trouve en plusieurs endroits du thésaurus.
+Son entrée principale ([**ici**](https://iconclass.org/34B12)) ne présente pas assez de variété pour couvrir tous nos besoins : il faut donc élaborer notre propre thésaurus.
 
 
 ### <33>
