@@ -212,7 +212,7 @@ Faire des photos avec son téléphone, c'est rapide ; récupérer des clichés 
 
 1. Accéder à [**cette page**](https://gallica.bnf.fr/ark:/12148/btv1b60000317/f43) sur Gallica
 
-2. La télécharger en JPG et l'afficher dans XnView                 
+2. La télécharger en JPG et l'afficher dans XnView                   
 
 
 ### <15>
@@ -304,7 +304,7 @@ Des extensions de navigateur pour aller plus vite :
 
 ### <22>
 
-1. Le fichier contenant toutes les URL des images s'intitule comme ceci : https://gallica.bnf.fr/iiif/ark:/12148/btv1b60000317/ **manifest.json**
+1. Le fichier contenant toutes les URL des images s'intitule comme ceci : [https://gallica.bnf.fr/iiif/ark:/12148/btv1b60000317/manifest.json](https://gallica.bnf.fr/iiif/ark:/12148/btv1b60000317/manifest.json)
 
 2. Pour trouver les URL des images, ouvrir ce fichier dans Firefox
 
