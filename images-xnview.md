@@ -212,7 +212,7 @@ Faire des photos avec son téléphone, c'est rapide ; récupérer des clichés 
 
 1. Accéder à [**cette page**](https://gallica.bnf.fr/ark:/12148/btv1b60000317/f43) sur Gallica
 
-2. La télécharger en JPG et l'afficher dans XnView                   
+2. La télécharger en JPG et l'afficher dans XnView                    
 
 
 ### <15>
