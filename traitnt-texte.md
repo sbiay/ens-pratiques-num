@@ -8,7 +8,7 @@ Plan :
 
 1. [Introduction](#t1)
 	1. [Structuration des textes sur le web ](#t1-1)
-2. [Activité](#t2)
+2. [Activité : étape 1](#t2)
 	1. [Appliquer une feuille de style ](#t2-1)
 	2. [Insérer un commentaire ](#t2-2)
 3. [Étape 2](#t3)
@@ -84,7 +84,7 @@ Tous les contenus que vous consultez sur le web sont structurés de cette façon
 
 <a id='t2'/>
 
-# Activité
+# Activité : étape 1
 [comment3]: <5> (TITRE1)
 
 
@@ -546,7 +546,7 @@ Le style est sauvegardé.
 ### <36>
 
 Récupérons maintenant un document structuré dont le style est différent.
-On peut reprendre du Moodle le document `vertus-etape-2.odt` en cliquant [**ici**](https://pedag.u-picardie.fr/moodle/upjv/pluginfile.php/930077/mod_folder/content/0/vertus-etape-2.odt?forcedownload=1)
+On peut reprendre du Moodle le document `vertus-etape-1.odt` en cliquant [**ici**](https://pedag.u-picardie.fr/moodle/upjv/pluginfile.php/1208602/mod_folder/content/0/vertus-etape-1.odt?forcedownload=1)
 
 - Renommer ce document pour ne pas le confondre : ce sera un simple test, `test.odt` peut faire l'affaire
 - Ouvrir ce fichier et aller sur **Styles** > Charger des styles depuis un modèle
@@ -580,7 +580,7 @@ Cette p. 1 peut :
 
 La mise en page d'un mémoire peut faire abstraction de cela : notre p. 1 sera la **pièce de titre**.
 
-Comme le montre le fichier `vertus-etape-3.odt` (à télécharger [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/folder/view.php?id=265116)), elle rassemble les informations suivantes :
+Comme le montre le fichier `vertus-etape-3.pdf` (à télécharger [**ici**](https://pedag.u-picardie.fr/moodle/upjv/pluginfile.php/1208602/mod_folder/content/0/vertus-etape-3.pdf?forcedownload=1)), elle rassemble les informations suivantes :
 
 1. En-tête : nom de l'institution
 2. Auteur
