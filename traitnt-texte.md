@@ -8,17 +8,18 @@ Plan :
 
 1. [Introduction](#t1)
 	1. [Structuration des textes sur le web ](#t1-1)
-2. [Activité : étape 1](#t2)
+2. [Etape 1 : Appliquer une feuille de style](#t2)
 	1. [Appliquer une feuille de style ](#t2-1)
 	2. [Insérer un commentaire ](#t2-2)
-3. [Étape 2](#t3)
+3. [Étape 2 : modifier les styles](#t3)
 	1. [Modifier les styles ](#t3-1)
-	2. [Mettre en page un mémoire ](#t3-2)
-	3. [Préparer une table des matières ](#t3-3)
-	4. [Importer/exporter un style ](#t3-4)
-4. [Étape 3](#t4)
-	1. [Les premières pages du mémoire ](#t4-1)
-	2. [Table des illustrations ](#t4-2)
+4. [Etape 3 : mise en page](#t4)
+	1. [Mettre en page un mémoire ](#t4-1)
+	2. [Préparer une table des matières ](#t4-2)
+	3. [Importer/exporter un style ](#t4-3)
+5. [Étape 4 : Compléter le paratexte](#t5)
+	1. [Premières pages du mémoire ](#t5-1)
+	2. [Table des illustrations ](#t5-2)
 
 [comment]: <> (FINET)
 
@@ -84,7 +85,7 @@ Tous les contenus que vous consultez sur le web sont structurés de cette façon
 
 <a id='t2'/>
 
-# Activité : étape 1
+# Etape 1 : Appliquer une feuille de style
 [comment3]: <5> (TITRE1)
 
 
@@ -158,7 +159,7 @@ Pour commenter un passage du texte, deux solutions sont possibles :
 
 <a id='t3'/>
 
-# Étape 2
+# Étape 2 : modifier les styles
 [comment6]: <10> (TITRE1)
 
 [comment7]: <10> (Faire appel aux styles de titres permet :)
@@ -328,7 +329,13 @@ Appliquer les autres modifications au Titre 1 :
 Terminer la mise en forme en modifiant le style **Citations langue étrangère** : italique.
 
 
-<a id='t3-2'/>
+<a id='t4'/>
+
+# Etape 3 : mise en page
+[comment30]: <19> (TITRE1)
+
+
+<a id='t4-1'/>
 
 ## Mettre en page un mémoire 
 
@@ -462,10 +469,10 @@ Vous pouvez transformer le document en pdf comme pour l'imprimer en recto-verso�
 
 La p. 2, verso de la page de titre, reste blanche et sans numéro pour que le chapitre commence sur la page impaire suivante.
 
-[comment31]: <29> (Faire un retour chariot pour le titre)
+[comment32]: <29> (Faire un retour chariot pour le titre)
 
 
-<a id='t3-3'/>
+<a id='t4-2'/>
 
 ## Préparer une table des matières 
 
@@ -527,7 +534,7 @@ Modifier **Titre de table des matières** pour le faire ressembler au Titre 1 :
 - Alignement : centrer
 
 
-<a id='t3-4'/>
+<a id='t4-3'/>
 
 ## Importer/exporter un style 
 
@@ -546,7 +553,7 @@ Le style est sauvegardé.
 ### <36>
 
 Récupérons maintenant un document structuré dont le style est différent.
-On peut reprendre du Moodle le document `vertus-etape-1.odt` en cliquant [**ici**](https://pedag.u-picardie.fr/moodle/upjv/pluginfile.php/1208602/mod_folder/content/0/vertus-etape-1.odt?forcedownload=1)
+On peut reprendre le document `vertus-etape-1.odt`
 
 - Renommer ce document pour ne pas le confondre : ce sera un simple test, `test.odt` peut faire l'affaire
 - Ouvrir ce fichier et aller sur **Styles** > Charger des styles depuis un modèle
@@ -556,15 +563,15 @@ On peut reprendre du Moodle le document `vertus-etape-1.odt` en cliquant [**ici*
 Est-ce que les styles ont bien été appliqués ?…
 
 
-<a id='t4'/>
+<a id='t5'/>
 
-# Étape 3
-[comment34]: <36> (TITRE1)
+# Étape 4 : Compléter le paratexte
+[comment35]: <36> (TITRE1)
 
 
-<a id='t4-1'/>
+<a id='t5-1'/>
 
-## Les premières pages du mémoire 
+## Premières pages du mémoire 
 
 ### <37>
 
@@ -580,7 +587,7 @@ Cette p. 1 peut :
 
 La mise en page d'un mémoire peut faire abstraction de cela : notre p. 1 sera la **pièce de titre**.
 
-Comme le montre le fichier `vertus-etape-3.pdf` (à télécharger [**ici**](https://pedag.u-picardie.fr/moodle/upjv/pluginfile.php/1208602/mod_folder/content/0/vertus-etape-3.pdf?forcedownload=1)), elle rassemble les informations suivantes :
+Comme le montre le fichier `vertus-etape-3.pdf`, elle rassemble les informations suivantes :
 
 1. En-tête : nom de l'institution
 2. Auteur
@@ -600,10 +607,10 @@ Comme le montre le fichier `vertus-etape-3.pdf` (à télécharger [**ici**](http
 
 La pièce de titre du mémoire de M2 est un peu différente.
 
-Un M2 implique un jury, dont on précisera l'institution où exercent les membres lorsqu'il ne s'agit pas de l'UPJV.  Voir le modèle [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=271015).
+Un M2 implique un jury, dont on précisera l'institution où exercent les membres lorsqu'il ne s'agit pas de l'UPJV.  Voir le modèle [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=321312).
 
 
-<a id='t4-2'/>
+<a id='t5-2'/>
 
 ## Table des illustrations 
 
@@ -627,7 +634,7 @@ Les logiciels de PAO les plus connus sont :
 - QuarkXPress
 - Scribus : **le seul gratuit** et pour PC comme pour Mac
 
-[comment37]: <41> (Scribus fonctionne également sous Ubuntu.)
+[comment38]: <41> (Scribus fonctionne également sous Ubuntu.)
 
 Vous voulez faire au plus simple ? LibreOffice Writer ou Word avec une seule image par page !
 
@@ -636,7 +643,6 @@ Vous voulez faire au plus simple ? LibreOffice Writer ou Word avec une seule im
 
 Les illustrations étant hors du texte, on va gérer leur numérotation à partir de la **table des Illustrations** de notre document.
 
-- Ouvrir le fichier `vertus-etape-3.odt` (à télécharger [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/folder/view.php?id=265116)
 - Se rendre à la table des Illustrations : on peut cliquer sur **Page 1 de 33** en bas à gauche et taper **27**…
 - Sélectionner toutes les lignes de cette table et leur attribuer le style de paragraphe **Illustration** (Visible si l'on affiche tous les styles).
 
