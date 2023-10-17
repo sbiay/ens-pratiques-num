@@ -99,7 +99,7 @@ Nous allons appliquer une feuille de style pour les titres et les citations d'un
 
 1. Télécharger le dossier `vertus` depuis le Moddle  ([**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/folder/view.php?id=321318))
 
-2. Extraire le contenu et ouvrir le fichier `vertus-en-forme.pdf` : il présente **le résultat que l'on souhaite obtenir**.
+2. Extraire le contenu et ouvrir le fichier `vertus-etape-1.pdf` : il présente **le résultat que l'on souhaite obtenir**.
 
 3. Ouvrir dans **LibreOffice Writer** le fichier `vertus-brut.odt`
 
