@@ -1,6 +1,6 @@
 ---
 title: Créer une collection bibliographique
-date: 1^er^ semestre 2022-2023
+date: 1^er^ semestre 2023-2024
 author: Sébastien Biay
 ---
 
@@ -13,7 +13,7 @@ Plan :
 	4. [Insérer une référence dans un traitement de texte ](#t1-4)
 	5. [Ajouter du texte dans une note de bas de page ](#t1-5)
 	6. [Changer de feuille de style ](#t1-6)
-	7. [Créer un compte et synchroniser sa bibliothèque ](#t1-7)
+	7. [Exporter sa bibliothèque ](#t1-7)
 2. [Créer et alimenter de nouvelles collections](#t2)
 	1. [Préférences d'utilisation ](#t2-1)
 	2. [Créer des collections ](#t2-2)
@@ -31,11 +31,31 @@ Plan :
 
 [comment2]: <1> (Comment gérer des citations de passages dans Zotero --question particulière--)
 
+[comment3]: <1> (Zotero : )
+
+[comment4]: <1> (- Découvrir cette interface)
+[comment5]: <1> (- On va créer quelques références à la main pour découvrir progressivement la composition des notices)
+[comment6]: <1> (- On va tout de suite essayer de citer ces références dans le traitement de texte --utilisation des boutons de la barre d'outils--)
+[comment7]: <1> (- Comment bien modifier et mettre à jour une référence)
+[comment8]: <1> (- Comment combiner du texte et des références en note de bas de page)
+[comment9]: <1> (- Tester des feuilles de styles différentes)
+[comment10]: <1> (- Organiser ses références en créant des collections)
+
+[comment11]: <1> (Chercher des références dans les catalogues spécialisés : )
+
+[comment12]: <1> (- Le catalogue du SCD de l'UPJV est limité)
+[comment13]: <1> (- Quel est le réflexe à avoir pour trouver un livre qui n'est pas à Amiens ?)
+[comment14]: <1> (- Maintenant quel est le catalogue à utiliser pour des recherches approfondies sur un sujet en histoire de l'art ?)
+
+[comment15]: <1> (On va découvrir aussi d'autres catalogues et évaluer leur forces et leurs faiblesses pour créer rapidement et proprement sa bibliographie sur Zotero.)
+
+[comment16]: <1> (Car on fond qu'elle est la première qualité du praticien du numérique ?)
+
 
 <a id='t1'/>
 
 # Prendre en main Zotero
-[comment3]: <1> (TITRE1)
+[comment17]: <1> (TITRE1)
 
 
 <a id='t1-1'/>
@@ -44,43 +64,14 @@ Plan :
 
 ### <2>
 
-Télécharger le fichier `vertus-etape-3.odt` depuis Moodle ([**ici**](https://pedag.u-picardie.fr/moodle/upjv/pluginfile.php/930077/mod_folder/content/0/vertus-etape-3.odt?forcedownload=1)).
+On ajoutera nos références bibliographiques dans le fichier `vertus…odt` que l'on a mis en forme lors des séances précédentes.
 
-On y ajoutera nos références bibliographiques.
-
-[comment5]: <2> (Par rapport à où on en était resté :)
-
-[comment6]: <2> (- Des choix typographiques améliorés, validés par P\. Sénéchal)
-[comment7]: <2> (- Une pièce de titre qui peut vous servir de modèle)
-[comment8]: <2> (- Une succession d'annexes introductives)
-[comment9]: <2> (- Vous n'êtes pas obligés d'avoir une dédicace, mais des remerciements oui --en général on commence par le directeur de mémoire.)
-
-[comment10]: <2> (Sur le moodle, il y a aussi `piece-titre-m2.odt` : pour votre M2, la typographie de la pièce de titre changera un peu.)
-
-[comment11]: <2> (Zotero : )
-
-[comment12]: <2> (- Découvrir cette interface)
-[comment13]: <2> (- On va créer quelques références à la main pour découvrir progressivement la composition des notices)
-[comment14]: <2> (- On va tout de suite essayer de citer ces références dans le traitement de texte --utilisation des boutons de la barre d'outils--)
-[comment15]: <2> (- Comment bien modifier et mettre à jour une référence)
-[comment16]: <2> (- Comment combiner du texte et des références en note de bas de page)
-[comment17]: <2> (- Tester des feuilles de styles différentes)
-[comment18]: <2> (- Organiser ses références en créant des collections)
-
-[comment19]: <2> (Chercher des références dans les catalogues spécialisés : )
-
-[comment20]: <2> (- Le catalogue du SCD de l'UPJV est limité)
-[comment21]: <2> (- Quel est le réflexe à avoir pour trouver un livre qui n'est pas à Amiens ?)
-[comment22]: <2> (- Maintenant quel est le catalogue à utiliser pour des recherches approfondies sur un sujet en histoire de l'art ?)
-
-[comment23]: <2> (On va découvrir aussi d'autres catalogues et évaluer leur forces et leurs faiblesses pour créer rapidement et proprement sa bibliographie sur Zotero.)
-
-[comment24]: <2> (Car on fond qu'elle est la première qualité du praticien du numérique ?)
+Vous pouvez aussi télécharger le fichier `vertus-etape-4.odt` depuis Moodle ([**ici**](https://pedag.u-picardie.fr/moodle/upjv/pluginfile.php/1208602/mod_folder/content/0/vertus-etape-4.odt?forcedownload=1)) et l'utiliser.
 
 
 ### <3>
 
-Télécharger :
+Si vous ne travaillez pas sur un poste de la salle informatique, télécharger :
 
 - **Zotero** (normalement déjà installé sur les postes de la salle)
 - **Zotero Connector**, extension du navigateur web
@@ -89,22 +80,43 @@ Tous les deux sont disponibles [**ici**](https://www.zotero.org/download/).
 
 Une fois le Zotero Connector installé, une icône en forme de **Z** doit apparaître dans la barre d'outil en haut de votre navigateur.
 
+[comment19]: <3> (**Lancer Zotero**)
+
+[comment20]: <3> (Au premier lancement, il va détecter la présence de LibreOffice et proposer l'installation d'une autre extension : **tout accepter** !)
+
+[comment21]: <3> (En cas de problème avec l'installation de cette extension, la lecture de ce tutoriel est conseillée : J. Sauvage, « Zotero en pratique : installer le logiciel Zotero et créer son compte Zotero en ligne. Installer le plugin », *BU Université Rennes 2*, URL : https://tutos.bu.univ-rennes2.fr/c.php?g=686436&p=4906338)
+
 
 ### <4>
 
-**Lancer Zotero**
+Posséder un compte gratuit est essentiel à l'utilisation de Zotero, ainsi vous ne mélangerez pas votre travail avec celui des autres utilisateurs du poste et vos références seront sauvegardées.
 
-Au premier lancement, il va détecter la présence de LibreOffice et proposer l'installation d'une autre extension : **tout accepter** !
+**Lancer Zotero, et créer un compte gratuit** :
 
-En cas de problème avec l'installation de cette extension, la lecture de ce tutoriel est conseillée : J. Sauvage, « Zotero en pratique : installer le logiciel Zotero et créer son compte Zotero en ligne.
-Installer le plugin », *BU Université Rennes 2*, URL : [https://tutos.bu.univ-rennes2.fr/c.php?g=686436&p=4906338](https://tutos.bu.univ-rennes2.fr/c.php?g=686436&p=4906338), consulté le 7 décembre 2022.
+- Accéder aux **Préférences** > Synchronisation > Paramètres > Créer un compte
+
+
+### <5>
+
+Une fois le compte créé et associé au logiciel local, revenir à la boîte de dialogue **Préférences de Zotero** et lancer la synchronisation.
+
+Si besoin, supprimer manuellement les références préexistantes.
+
+
+### <6>
+
+Notre espace de stockage gratuit se remplira beaucoup trop vite si l'on ne fait pas certains réglages.
+
+Toujours dans les **Préférences de Zotero** > Générales, décocher toutes les cases ! Ainsi on évitera d'importer dans notre espace de stockage tout ce qui est lourd : images, pdf, etc.
+
+Le compte gratuit peut désormais accueillir des milliers de références sans problème.
 
 
 <a id='t1-2'/>
 
 ## Découvrir l'interface 
 
-### <5>
+### <7>
 
 L'interface de Zotero se présente en trois zones verticales.
 
@@ -118,12 +130,12 @@ Tout est très vide pour l'instant : ajoutons une première référence, manuel
 - Ajouter un **livre**
 
 
-### <6>
+### <8>
 
 L'interface se remplit déjà, on a donc (de gauche à droite) :
 
 1. **Un navigateur de collections** qui contient le dossier « Ma bibliothèque »
-2. **Une liste de références** où apparaît une petite de livre en bleu
+2. **Une liste de références** où apparaît une petite icône de livre en bleu
 3. **La notice** de notre livre avec l'ensemble des champs bibliographiques à compléter
 
 
@@ -131,7 +143,7 @@ L'interface se remplit déjà, on a donc (de gauche à droite) :
 
 ## Créer une référence à la main 
 
-### <7>
+### <9>
 
 Remplissons quelques champs pour décrire notre livre :
 
@@ -143,7 +155,7 @@ Remplissons quelques champs pour décrire notre livre :
 **Une astuce** : pour passer d'un champ à l'autre, appuyer sur **Tab** (cela fonctionne dans tous les formulaires à compléter, notamment dans les navigateurs web)
 
 
-### <8>
+### <10>
 
 Créons une deuxième référence :
 
@@ -162,35 +174,18 @@ Créons une deuxième référence :
 
 ## Insérer une référence dans un traitement de texte 
 
-### <9>
+### <11>
 
-Pour insérer des références dans un traitement de texte, nous allons utiliser :
-
-- LibreOffice Writer si vous travaillez sur un ordinateur personnel
-- Google Drive si vous travaillez sur un poste de la salle informatique
-
-Dans le second cas :
-
-- Accéder à Google Drive, [**ici**](https://drive.google.com/drive/my-drive)
-- Créer un **Nouveau** document (icône en forme de croix colorée)
-- Choisir **Importer un fichier** pour importer `vertus-etape-3.odt`
-- Ouvrir le fichier importé dans **Google Docs**
-
-
-### <10>
-
-Insérons les deux références dans notre texte :
+Sous LibreOffice Writer, insérons les deux références dans notre texte :
 
 - Placer son curseur dans le texte au point d'insertion voulu
-- Accéder au menu Zotero
-	- Dans Google Drive : **Zotero** dans le menu principal
-	- Dans LibreOffice Writer : **icônes avec un Z rouge** dans la barre d'outils
+- Accéder au menu Zotero : **icônes avec un Z rouge** dans la barre d'outils
 - Cliquer sur Add/Édit Citation
 
-Pour le premier ajout sous Google Drive, vous allez sans doute recevoir un **mail de sécurité** : vérifiez la boîte mail rattachée au même compte Google et accepter.
+[comment25]: <11> (Pour le premier ajout sous Google Drive, vous allez sans doute recevoir un **mail de sécurité** : vérifiez la boîte mail rattachée au même compte Google et accepter.)
 
 
-### <11>
+### <12>
 
 Dans la boîte de dialogue qui s'est ouverte (attention, elle peut se trouver dans une fenêtre en arrière-plan) :
 
@@ -199,7 +194,7 @@ Dans la boîte de dialogue qui s'est ouverte (attention, elle peut se trouver da
 - Ok
 
 
-### <12>
+### <13>
 
 Une plus petite boîte de dialogue encadrée de rouge s'ouvre (elle aussi peut se trouver en arrière-plan) :
 
@@ -212,7 +207,7 @@ Quand les deux références ont été ajoutées dans la boîte de dialogue : **
 Contrôlons le résultat…
 
 
-### <13>
+### <14>
 
 Peut-être que la typographie ne vous plaît pas !
 
@@ -225,27 +220,25 @@ C'est une typographie anglo-américaine :
 Mais on pourra désormais gérer la typographie des notes de bas de page en changeant de **feuille de style**.
 
 
-### <14>
+### <15>
 
 Lorsque Zotero est ouvert, les références se synchronisent avec le traitement de texte :
 
 - Retourner dans Zotero
 - Changer un mot dans un titre, ou une date, etc., puis faire Entrée
-- Revenir dans LibreOffice Writer/Google Drive
-- Cliquer sur **Refresh**
-	- Google Drive : dans le menu Zotero
-	- LibreOffice Writer : parmi les icônes avec un Z rouge
+- Revenir dans LibreOffice Writer
+- Cliquer sur **Refresh** parmi les icônes avec un Z rouge
 	
 La mise à jour a bien fonctionné ?
 
 
-### <15>
+### <16>
 
 **RÈGLE D'OR**
 
-**Il ne faut jamais modifier manuellement le contenu de la référence**.
+**Il ne faut jamais modifier manuellement le contenu de la référence** dans LibreOffice Writer.
 
-**Soyons fous !** Faisons-le pour voir…
+**Mais soyons fous !** Faisons-le pour voir…
 
 - Écrire quelque chose au milieu d'une référence
 - Cliquer sur **Refresh**
@@ -254,18 +247,18 @@ Un message d'alerte est donné :
 
 - Toujours cliquer sur **Non**. Si l'on dit oui, le lien avec la bibliothèque Zotero sera cassé pour la référence concernée.
 
-[comment28]: <15> (LibreOffice Writer : Dans la note, les références apparaissent surlignées en gris. )
+[comment26]: <16> (LibreOffice Writer : Dans la note, les références apparaissent surlignées en gris. )
 
 
 <a id='t1-5'/>
 
 ## Ajouter du texte dans une note de bas de page 
 
-### <16>
+### <17>
 
-Dans Google Drive, on peut sans problème ajouter du texte avant ou après les citations.
+[comment28]: <17> (Dans Google Drive, on peut sans problème ajouter du texte avant ou après les citations.)
 
-**Problème spécifique à LibreOffice Writer et Microsoft Word**
+**Problème spécifique à LibreOffice Writer et Microsoft Word** et non à l'usage de Zotero sous Google Drive.
 
 Dans ces logiciels, les références Zotero apparaissent sur un **champ gris**
 
@@ -277,9 +270,7 @@ Tout va mal ! Le texte s'insère dans le gris
 Avec un **Refresh**, on va, soit perdre la saisie, soit casser le lien avec Zotero.
 
 
-### <17>
-
-**Problème spécifique à LibreOffice Writer et Microsoft Word**
+### <18>
 
 Deux solutions :
 
@@ -303,7 +294,7 @@ Deux solutions :
 
 ## Changer de feuille de style 
 
-### <18>
+### <19>
 
 Testons des feuilles de style différentes.
 
@@ -317,7 +308,7 @@ Une fois fait ce petit nettoyage :
 C'est un format de citation plus abrégé, avec seulement le patronyme de l'auteur et le titre.
 
 
-### <19>
+### <20>
 
 Testons encore une feuille de la famille Chicago :
 
@@ -327,7 +318,7 @@ Testons encore une feuille de la famille Chicago :
 Cette fois, il n'y a plus de note de bas de page : les références sont données entre parenthèses, là où l'on avait inséré la note.
 
 
-### <20>
+### <21>
 
 Vous serez amenés à choisir des styles différents selon les ciconstances : 
 
@@ -337,7 +328,7 @@ Vous serez amenés à choisir des styles différents selon les ciconstances :
 Le jeu consiste à trouver le style dont on a besoin pour chaque travail…
 
 
-### <21>
+### <22>
 
 **Où trouver des styles ?**
 
@@ -351,12 +342,15 @@ On peut y rechercher les styles :
 Des bulles s'ouvrent au survol des styles pour visualiser la typographie de chaque style.
 
 
-### <22>
+### <23>
 
 « **C'est super !**
 Mais concrètement, je prends lequel pour mon mémoire ?… »
 
 Voici un style de type **note complète** que vous pouvez utiliser : `upjvha-full-note.csl` à télécharger [**ici**](https://github.com/sbiay/zotero/blob/main/upjvha-full-note/upjvha-full-note.csl)
+
+Si votre directeur préfère un style de type **auteur-date** (Ph.
+Sénéchal notamment), vous pouvez utiliser  : `upjvha-author-date.csl` à télécharger [**ici**](https://github.com/sbiay/zotero/blob/main/upjvha-author-date/upjvha-aut-dat.csl)
 
 Une fois accédé à la page :
 
@@ -364,7 +358,7 @@ Une fois accédé à la page :
 - Sinon *Enregistrer sous* le contenu de la page
 
 
-### <23>
+### <24>
 
 Pour utiliser une feuille de style qui ne se serait pas installée toute seule :
 
@@ -380,7 +374,7 @@ Vous devriez voir **UPJV Histoire de l'art - note complète** parmi les styles d
 - Naviguer jusque au fichier que vous avez sauvegardé pour l'installer
 
 
-### <24>
+### <25>
 
 On retourne à présent au traitement de texte :
 
@@ -390,13 +384,12 @@ On retourne à présent au traitement de texte :
 
 <a id='t1-7'/>
 
-## Créer un compte et synchroniser sa bibliothèque 
+## Exporter sa bibliothèque 
 
-### <25>
+### <26>
 
-Zotero peut s'utiliser **localement**.
-
-Pour sauvegarder notre bibliothèque : 
+La bibliothèque est sauvegardée via notre compte en ligne.
+On peut aussi l'exporter dans différents formats de fichiers : 
 
 - Dans le menu principal, cliquer sur **Fichier** > Exporter la bibliothèque
 
@@ -404,20 +397,10 @@ Les formats proposés sont multiples ; quel que soit le format choisi, il perme
 **Zotero RDF** est tout de même le plus indiqué.
 
 
-### <26>
-
-Le plus commode reste la **création d'un compte gratuit et la synchronisation** de notre bibliothèque sur le serveur Zotero.
-
-- Dans le menu principal : **Préférences**
-- Onglet **Synchronisation** > Créer un compte
-
-Une fois le compte créé sur le web, revenir dans l'onglet Synchronisation pour entrer son nom d'utilisateur et son mot de passe
-
-
 <a id='t2'/>
 
 # Créer et alimenter de nouvelles collections
-[comment32]: <26> (TITRE1)
+[comment31]: <26> (TITRE1)
 
 
 <a id='t2-1'/>
@@ -491,7 +474,7 @@ Prenez un moment pour chercher dans quelle bibliothèque elle est disponible.
 
 ### <32>
 
-On peut accéder à sa notice dans le **SUDOC** en cliquant [**ici**](	 https://www.sudoc.fr/224675664)
+On peut accéder à sa notice dans le **SUDOC** en cliquant [**ici**](https://www.sudoc.fr/224675664)
 
 Comme vous le savez sans doute, le SUDOC est le catalogue collectif des bibliothèques de l’Enseignement Supérieur.
 Il permet d'accéder aux notices d'ouvrages que, pour la plupart, vous pouvez **emprunter** via le service du **PEB**.
@@ -699,7 +682,7 @@ Les réf.
 
 L'import depuis Persée est extrêmement propre : il n'y a rien à nettoyer.
 
-[comment37]: <47> (Même si on importe l'URL et la date de consultation, Zotero sait que quand un article possède une pagination, c'est qu'il a été imprimé, et que donc il ne faut pas afficher d'URL ou de date de consultation. En revanche, s'il n'y a pas de pagination, il envoie l'URL.)
+[comment36]: <47> (Même si on importe l'URL et la date de consultation, Zotero sait que quand un article possède une pagination, c'est qu'il a été imprimé, et que donc il ne faut pas afficher d'URL ou de date de consultation. En revanche, s'il n'y a pas de pagination, il envoie l'URL.)
 
 
 ### <48>
@@ -826,7 +809,7 @@ Notre recherche se mettra à jour automatiquement et on constate qu'elle concern
 <a id='t3'/>
 
 # Adapter Zotero à un usage spécifique
-[comment40]: <56> (TITRE1)
+[comment39]: <56> (TITRE1)
 
 
 <a id='t3-1'/>
@@ -846,7 +829,7 @@ Ou touche à ses limites lorsqu'il s'agit de **citer une source éditée dans un
 
 Pour citer une source de ce recueil, par exemple *Vita et passio sancti Abbonis* par Aimoin de Fleury, p. 25-38 (cette pagination est fausse), je dois adopter la typographie suivante :
 
-- Aimoin de Fleury, *Vita et passio sancti Abbonis*, éd\. Robert-Henri Bautier, Gillette Tyl-Labory, dans *L’abbaye de Fleury en l’an mil*, éd\. Robert-Henri Bautier, Gillette Tyl-Labory, Anselme Davril, Lin Donnat, Paris, CNRS éd, 2004 (Sources d’histoire médiévale, 32), p. 25-38.
+- Aimoin de Fleury, *Vita et passio sancti Abbonis*, éd. Robert-Henri Bautier, Gillette Tyl-Labory, dans *L’abbaye de Fleury en l’an mil*, éd. Robert-Henri Bautier, Gillette Tyl-Labory, Anselme Davril, Lin Donnat, Paris, CNRS éd, 2004 (Sources d’histoire médiévale, 32), p. 25-38.
 
 Le titre du texte ET le titre de la monographie doivent être en italique.
 
@@ -882,7 +865,7 @@ dans le traitement de texte.
 <a id='t4'/>
 
 # Citer la bibliographie dans le traitement de texte
-[comment42]: <60> (TITRE1)
+[comment41]: <60> (TITRE1)
 
 
 ### <61>
@@ -896,4 +879,4 @@ Pour mettre en forme la bibliographie à la fin de votre mémoire, on ne fera pa
 - **Méthode de création** : coller dans le presse-papier
 - Enfin, coller le contenu du presse-papier dans le traitement de texte.
 
-Il ne reste plus qu'à appliquer un petit style de paragraphe pour présenter correctement la bibliographie (avec un retrait à gauche de 0,5cm sauf pour la 1re ligne…
+Il ne reste plus qu'à appliquer un petit style de paragraphe pour présenter correctement la bibliographie (avec un retrait à gauche de 0,5cm sauf pour la 1^re^ ligne…
