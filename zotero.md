@@ -93,7 +93,12 @@ Posséder un compte gratuit est essentiel à l'utilisation de Zotero, ainsi vous
 
 **Lancer Zotero, et créer un compte gratuit** :
 
-- Accéder aux **Préférences** > Synchronisation > Paramètres > Créer un compte
+- Accéder aux **Préférences** :
+
+	- Mac : menu **Zotero** > Préférences
+	- Win : **Edition** > Préférences
+
+- Dans **Préférences** > Synchronisation > Paramètres > Créer un compte
 
 
 ### <5>
