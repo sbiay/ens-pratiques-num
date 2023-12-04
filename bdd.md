@@ -1,6 +1,6 @@
 ---
 title: Créer une base de données relationnelle
-date: 1^er^ semestre 2022-2023
+date: 1^er^ semestre 2023-2024
 author: Sébastien Biay
 ---
 
@@ -33,10 +33,10 @@ Plan :
 
 ### <2>
 
-- Traiter des données en masse
-- Les exploiter : statistiques
+- Les organiser : traiter des données en masse
+- Les exploiter : statistiques, cartographies, diagrammes
 - Les publier : partager les données de la recherche
-- Les visualiser : collections virtuelles, cartographies, diagrammes
+- Les valoriser : collections virtuelles
 
 
 <a id='t1-2'/>
@@ -56,7 +56,7 @@ Mais la pierre angulaire du monde des bases de données, c'est le **modèle tabu
 
 ### <4>
 
-On démarre avec des données très simples à télécharger [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=278086)
+On démarre avec des données très simples à télécharger [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=344777)
 
 Un tableau présente trois éléments :
 
@@ -77,14 +77,14 @@ La puissance du tableau réside notamment dans la possibilité de **trier selon 
 
 ### <6>
 
-Ajoutons un attribut : la **période** de spécialisation des personnes
+Ajoutons un attribut : la **période** de spécialisation
 
 Il comporte quatre valeurs possibles :
 
-1. antique
-2. médiévale
-3. moderne
-4. contemporaine
+1. Antique
+2. Médiévale
+3. Moderne
+4. Contemporaine
 
 
 ### <7>
@@ -119,7 +119,7 @@ Si maintenant je veux appliquer un **filtre** pour ne visualiser que les enregis
 ### <9>
 
 Nous allons concevoir une base de données sur le chat dans l'histoire de l'art.
-Chacun-e va remplir une mission de son choix (liste [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=278106)) :
+Chacun.e va remplir une mission de son choix (liste [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=321309)) :
 
 1. Fouiller des collections numériques en utilisant les **filtres ou facettes**, pour récolter **5 œuvres**
 2. Repérer le **permalien** (s'il existe) : une URL courte qui se termine par un identifiant pérenne
@@ -144,7 +144,7 @@ Ce qu'il faut faire avec les données :
 
 2. Renommer les images téléchargées par l'identifiant de l'item (`01.jpg`, `02.jpg`)
 
-3. Placer le fichier de l'image dans le dossier virtuel du Moodle [**envoyer-images-drive**](https://pedag.u-picardie.fr/moodle/upjv/mod/url/view.php?id=278088)
+3. Placer le fichier de l'image dans le [**drive**](https://drive.google.com/drive/folders/1sH30BKL2uREnLs9z3BxrNioxAkM9nuup)
 
 
 <a id='t2-2'/>
@@ -162,7 +162,7 @@ En bref, combien de **colonnes** avec quels intitulés faut-il ajouter à notre 
 
 ### <12>
 
-La base **Agorha** de l'INHA est un excellent modèle francophone pour définir la liste et les noms des attributs (voir une statuette égyptienne [**ici**](https://agorha.inha.fr/ark:/54721/64706557-e7ad-4e92-8361-3427c89882b0) ou un tableau du XVI^e^-XVII^e^ s.
+La base **Agorha** de l'INHA est un excellent modèle francophone pour définir la liste et les noms des attributs (voir une statuette égyptienne [**ici**](https://agorha.inha.fr/ark:/54721/64706557-e7ad-4e92-8361-3427c89882b0) ou un tableau du XVI^e^-XVII^e^ s.
 [**là**](https://agorha.inha.fr/ark:/54721/14f34326-2b28-493e-89be-31f2f5830311)) :
 
 - Identification :
@@ -271,6 +271,7 @@ Voir par exemple la notice du Metropolitan Museum [**ici**](https://data.bnf.fr/
 
 **C'est à vous !** Renseignez le lieu de conservation de votre premier enregistrement selon la forme donnée par Data-BnF. 
 
+
 ### <20>
 
 Le format de données fourni par Data-BnF pose un problème.
@@ -351,7 +352,7 @@ La solution était : **`=R2&", "&P2&" ("&L2&")"`**
 
 Ajoutons à présent au début de notre formule : 
 
-- **Auteur** (colonne **G**)  suivi d'une virgule ;
+- **Auteur** (colonne **G**) suivi d'une virgule ;
 - **Titre** (colonne **F**) suivi d'une virgule ;
 - **Type d'œuvre** (colonne **J**) suivi d'une virgule
 

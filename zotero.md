@@ -511,7 +511,7 @@ Sauf que tous les catalogues ne se valent pas…
 
 On note quelques différences :
 
-- SUDOC indique davantage d'auteurs (mais ce ne sont en fait que des collaborateurs ou des auteurs de préfaces, bref, ce sont des informations erronées)
+- SUDOC indique davantage d'auteurs (mais ce ne sont en fait que des collaborateurs ou des auteurs de préfaces, bref, ce sont des informations qui ne nous intéressent pas)
 - BnF-CG indique la collection de l'ouvrage (« Sources d'histoire médiévale ») et le numéro dans la collection
 
 En résumé, BnF-CG est meilleur que le SUDOC pour importer des références d'ouvrages.
@@ -594,7 +594,7 @@ Aucun import automatique dans Zotero n'est parfait : il faut toujours **passer 
 
 **BnF-CG** a deux défauts, qu'il faudra corriger à la main :
 
-1. Lorsque le titre comporte un sous-titre séparé apr deux points, les deux points sont suivis d'une double espace et non d'une simple espace
+1. Lorsque le titre comporte un sous-titre séparé par deux points, les deux points sont suivis d'une double espace et non d'une simple espace
 2. La notice importée contient une information inutile et à supprimer : **Nb de volumes : 1**
 
 
@@ -614,7 +614,7 @@ Pour ajouter une espace insécable :
 
 Repartons d'une collection bibliographique un peu propre.
 
-- Dans la collection `td-numerique` > `sources`, on ne conserve que *L’abbaye de Fleury en l’an mil* importé depuis BnF-CG. - La collection  `td-numerique` > `etudes`
+- Dans la collection `td-numerique` > `sources`, on ne conserve que *L’abbaye de Fleury en l’an mil* importé depuis BnF-CG
 
 Faisons une recherche complémentaire sur l'**abbaye de Fleury** (auj.
 Saint-Benoît-sur-Loire) et le rôle de l'un de ses abbés importants : **Gauzlin**.
@@ -637,6 +637,8 @@ a pour auteur **Franzé, Barbara**.
 
 Il s'agit d'un **chapitre** dans une monographie.
 Pas de chance, elle n'est pas dans les collections de la BnF, mais on va pouvoir la récupérer par l'**ISBN** :
+
+[comment36]: <44> (Art, architecture, and the moving viewer, c.300-1500 CE  	edited by Gillian B. Elliott, Anne Heath ; toujours pas en nov 2023.)
 
 - Dans la notice, cliquer sur **Lien vers la source** (là aussi mieux vaut ouvrir dans un nouvel onglet, car on va très vite revenir à la notice du chapitre)
 - Copier l'ISBN
@@ -687,7 +689,7 @@ Les réf.
 
 L'import depuis Persée est extrêmement propre : il n'y a rien à nettoyer.
 
-[comment36]: <47> (Même si on importe l'URL et la date de consultation, Zotero sait que quand un article possède une pagination, c'est qu'il a été imprimé, et que donc il ne faut pas afficher d'URL ou de date de consultation. En revanche, s'il n'y a pas de pagination, il envoie l'URL.)
+[comment37]: <47> (Même si on importe l'URL et la date de consultation, Zotero sait que quand un article possède une pagination, c'est qu'il a été imprimé, et que donc il ne faut pas afficher d'URL ou de date de consultation. En revanche, s'il n'y a pas de pagination, il envoie l'URL.)
 
 
 ### <48>
@@ -705,7 +707,7 @@ Pour éviter cela :
 
 ### <49>
 
-Laissons tomber le 2^e^ résultat que nous donnait Kubikat et complétons la recherche avec la bibliothèque de l'INHA, [**ici**](https://inha.summon.serialssolutions.com/#!/search?ho=t&include.ft.matches=f&l=fr-FR&q=saint-beno%C3%Aet-sur-loire%20gauzlin)
+Laissons tomber le 2^e^ résultat que nous donnait Kubikat et complètons la recherche avec la bibliothèque de l'INHA, [**ici**](https://inha.summon.serialssolutions.com/#!/search?ho=t&include.ft.matches=f&l=fr-FR&q=saint-beno%C3%Aet-sur-loire%20gauzlin)
 
 - Cliquer sur le dossier jaune pour importer la réf.
 - Contrôler les données
@@ -814,7 +816,7 @@ Notre recherche se mettra à jour automatiquement et on constate qu'elle concern
 <a id='t3'/>
 
 # Adapter Zotero à un usage spécifique
-[comment39]: <56> (TITRE1)
+[comment40]: <56> (TITRE1)
 
 
 <a id='t3-1'/>
@@ -870,7 +872,7 @@ dans le traitement de texte.
 <a id='t4'/>
 
 # Citer la bibliographie dans le traitement de texte
-[comment41]: <60> (TITRE1)
+[comment42]: <60> (TITRE1)
 
 
 ### <61>
