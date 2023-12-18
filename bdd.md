@@ -96,6 +96,11 @@ Si je veux trier les modernistes par ordre alphabétique, je dois appliquer un t
 	- Clé de tri 1 : Période
 	- Clé de tri 2 : Nom
 
+Pour trier les périodes par ordre chronologique, on peut créer une liste de tri personnalisée :
+
+- Win : **Outils** > Options > LibreOffice Calc > Liste de tri > Nouveau
+- Mac : **LibreOffice** > Préférences > LibreOffice Calc > Liste de tri > Nouveau
+
 
 ### <8>
 
@@ -119,10 +124,10 @@ Si maintenant je veux appliquer un **filtre** pour ne visualiser que les enregis
 ### <9>
 
 Nous allons concevoir une base de données sur le chat dans l'histoire de l'art.
-Chacun.e va remplir une mission de son choix (liste [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=321309)) :
+Chacun.e va remplir une mission ; la liste est [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=321309) :
 
 1. Fouiller des collections numériques en utilisant les **filtres ou facettes**, pour récolter **5 œuvres**
-2. Repérer le **permalien** (s'il existe) : une URL courte qui se termine par un identifiant pérenne
+2. Repérer le **permalien** (s'il existe) : c'est une URL courte qui se termine par un identifiant (les URLS très longues ne sont pas des permaliens…)
 3. Télécharger une image (si possible !)
 
 Il peut être utile de télécharger l'extension pour Firefox [**Dezoomify**](https://addons.mozilla.org/en-US/firefox/addon/dezoomify/) pour télécharger en HD si le site ne le propose pas.
@@ -142,7 +147,7 @@ Ce qu'il faut faire avec les données :
 
 1. Ajouter les permaliens dans le tableau partagé [**base.ods**](https://docs.google.com/spreadsheets/d/1jB7TmDyQ3jfdU1t5gppX3tuWLvry1_13vn-0OlHHLoc/edit#gid=87305927)
 
-2. Renommer les images téléchargées par l'identifiant de l'item (`01.jpg`, `02.jpg`)
+2. Renommer les images téléchargées par l'identifiant que j'appelle **Clé item** (`01.jpg`, `02.jpg`)
 
 3. Placer le fichier de l'image dans le [**drive**](https://drive.google.com/drive/folders/1sH30BKL2uREnLs9z3BxrNioxAkM9nuup)
 
@@ -167,7 +172,7 @@ La base **Agorha** de l'INHA est un excellent modèle francophone pour définir 
 
 - Identification :
 	- Type d'œuvre (voir le thésaurus [**ici**](https://thesaurus.inha.fr/thesaurus/page/ark:/54721/8e09cc44-abef-4f14-9761-6c9cb3f63b2d))
-	- Titre : il faudra le donner ***en français***
+	- Titre : il faudra le donner ***en français*** (sous réserve que l'œuvre possède une dénomination en français)
 
 - Localisation :
 	- Lieu de conservation
@@ -227,7 +232,7 @@ Les valeurs que contiendra notre tableau sont de trois types :
 
 1. Texte (ou chaînes de caractères)
 2. Nombres
-3. Booléens[^1] : type « vrai »/« faux »
+3. Booléens[^1] : type « VRAI »/« FAUX »
 
 [^1]: Du nom de l'inventeur de ce type de variable : George Boole (1815-1864).
 
@@ -278,6 +283,8 @@ Le format de données fourni par Data-BnF pose un problème.
 
 On doit séparer le nom de l'institution et le nom de la ville pour rendre les données nucléaires.
 
+Par ailleurs, si l'on ne trouve pas le lieu de conservation cherché sur Data-BnF, on peut le chercher également sur [**Wikidata**](https://www.wikidata.org) (à ne pas confondre avec Wikipédia).
+
 
 ### <21>
 
@@ -288,14 +295,11 @@ Si l'on est amené à avoir beaucoup de données et des données variées, il es
 On verra cela plus loin…
 
 
-[comment13]: <21> (Fin de la 2^e^ séance)
-
-
 ### <22>
 
 **Si je veux y voir plus clair, je masque** les colonnes qui vont me gêner. Dans LibreOffice Calc :
 
-- Cliquer droit sur la lettre d'une colonne > Masquer la colonne (par exemple **H** et **I**)
+- Cliquer droit sur la lettre d'une colonne > Masquer la colonne
 
 Pour faire réapparaître les colonnes masquées :
 
@@ -314,27 +318,44 @@ Il peuvent poser des problèmes d'homonymie.
 - Inscrire le numéro d'identification dans la colonne **H**
 
 
+### <24>
+
+**Titre**
+
+Il n'existe pas de catalogue multilingue des titres d'œuvres équivalent à ULAN.
+L'outil **Cultural Objects Names Authority** du Getty est trop pauvre ; voir par exemple pour [**Manet**](https://www.getty.edu/cona/CONASearchResults.aspx?title=&wtype=&creator=Manet%2C+Edouard+%5B500010363%5D&material=&location=&number=&geographic=&createstart=&createend=&general=&specsubject=&page=1)…
+
+Ce sont vos propres recherches qui vous permettront de trouver (ou pas) le titre français des œuvres.
+
+
+### <25>
+
+Si la **casse** (l'emploi des majuscules) est différente selon les lignes d'une même colonne, LibreOffice Calc permet de l'uniformiser facilement :
+
+- **Format** > Texte > MAJUSCULES / minuscules, etc.
+
+
 <a id='t2-4'/>
 
 ## Écrire une formule pour concaténer plusieurs champs 
 
-### <24>
+### <26>
 
 On va composer des **légendes** pour nos futures illustrations grâce à l'écriture de **formules**
 
 Si j'écris `R2` dans une case, la case affiche… `R2` ("bof")
 
-Si j'écris `=R2` dans une case, la case affiche le contenu de la case F2 ("wouahou")
+Si j'écris `=R2` dans une case, la case affiche le contenu de la case R2 ("wouahou")
 
-- Écrire dans la colonne **E**, à la ligne de votre première œuvre, le contenu de la colonne **R**
+- Écrire dans la colonne **E**, à la ligne de votre première œuvre, le contenu de la colonne **R** (attention à bien noter le numéro de votre "Clé item" !)
 
 
-### <25>
+### <27>
 
 Pour « concaténer » le contenu des colonnes **R** (ville) et **P** (institution), dans la colonne **E**, j'écris, par exemple pour la ligne 2 : **`=R2&P2`**
 
 
-### <26>
+### <28>
 
 Il me faut un séparateur entre les deux données.
 
@@ -342,13 +363,8 @@ Il s'écrit entre **guillemets ""**.
 
 La formule devient pour la ligne 2 : **`=R2&", "&P2`**
 
-Continuons à écrire la légende en ajoutant la date, en format texte (colonne **L**) entre parenthèses.
-Essayez d'abord sans regarder la solution (diapo suivante)
 
-
-### <27>
-
-La solution était : **`=R2&", "&P2&" ("&L2&")"`**
+### <29>
 
 Ajoutons à présent au début de notre formule : 
 
@@ -356,62 +372,72 @@ Ajoutons à présent au début de notre formule :
 - **Titre** (colonne **F**) suivi d'une virgule ;
 - **Type d'œuvre** (colonne **J**) suivi d'une virgule
 
-
-### <28>
-
-La solution était : **```=G2&", "&F2&", "&J2&", "&R2&", "&P2&" ("&L2&")"```**
-
-**Problème** : en l'absence de donnée, j'ai un **séparateur inutile**.
+Et à la fin la **date de création littérale** (colonne **L**)
 
 
-### <29>
+### <30>
 
-On efface le début de la formule pour revenir à **```=" ("&L2&")"```**
+La solution était : **```=G2&", "&F2&", "&J2&", "&", "&R2&", "&P2&", "&L2```**
+
+**Problème** : si certaines cases sont vides, j'ai des **séparateurs inutiles**.
+
+
+### <31>
 
 On utilise la fonction **TEXTJOIN**, qui s'appelle **JOINDRE.TEXTE** dans LibreOffice Calc.
 
 - Juste après le égal, on écrit **TEXTJOIN(**
 - On définit d'abord le délimiteur : `", "`
 - On tape **`;`** pour séparer les paramètres
-- **`1`** signifie **vrai** pour le paramètre **ignorer si vide** (en effet on veut ignorer les cases vides)
-- Puis on définit chaque case à appeler : pour la ligne 2 : **`G2;F2;J2;R2;P2`** (attention, ici ne pas utiliser `F:F;Q:Q`…)
-- On ferme la parenthèse et on ajoute **`&`** pour concaténer avec la suite de la formule
+- **`1`** signifie **VRAI** pour le paramètre **ignorer si vide** (en effet on veut ignorer les cases vides)
+- Puis on définit chaque case à appeler : pour la ligne 2 : **`G2;F2;J2;R2;P2;L2`**
+- On ferme la parenthèse et on appuie sur **Entrée**
 
 
-### <30>
+### <32>
 
 Pour la ligne 2 du tableau, la formule serait :\
-**`=TEXTJOIN(", ";1;G2;F2;J2;R2;P2)&" ("&L2&")"`**
+**`=TEXTJOIN(", ";1;G2;F2;J2;R2;P2;L2)`**
 
 
-### <31>
+### <33>
 
-Autre solution : **créer une fonction de condition**
+Autre solution : **créer une fonction de condition**.
 
-- On se dit la phrase suivante : *Si le contenu de la colonne F est égal à rien alors je veux afficher rien ; dans le cas contraire, je veux afficher la colonne F suivie de virgule espace*
+Par exemple, si la colonne **Auteur** (colonne **G**) est vide, je veux écrire automatiquement "anonyme".
 
-- Sa traduction en formule est : **`SI(G2="";"";G2&", ")`**
+- On se dit la phrase suivante : *Si le contenu de la colonne G est égal à rien alors je veux afficher "Anonyme" suivi d'une virgule ; dans le cas contraire, je veux afficher "", c'est-à-dire rien, puisque s'il y a un auteur, il est déjà affiché par la formule construire précédemment avec TextJoin*
 
-Pour enchaîner **G** et **F** :\
-**`=SI(G2="";"";G2&", ")&F2`**
+- Sa traduction en formule est : **`SI(G2="";"Anonyme, ";"")`**
+
+On ajoute cette condition au début de la fonction :\
+**`=SI(G2="";"Anonyme, ";"")&`\
+`TEXTJOIN(", ";1;G2;F2;J2;R2;P2;L2)`**
+
+
+### <34>
+
+Si vous aviez un nom d'auteur renseigné dans la colonne **G**, rien ne se passe !
+
+Observez le changement en supprimant le nom d'auteur : on affiche "Anonyme".
 
 
 <a id='t2-5'/>
 
 ## Élaborer un thésaurus personnel 
 
-### <32>
+### <35>
 
-L'intérêt de monter sa propre base de données réside surtout dans la possibilité de **forger des catégories d'analyse**.
+L'intérêt de monter sa propre base de données réside aussi dans la possibilité de **forger des catégories d'analyse**.
 Ce sera le cas pour le contenu iconographique de notre base.
 
-Le thésaurus **Iconclass** constitue un modèle intéressant (voir [**ici**](https://iconclass.org/help/outline)) avec sa structure en arborescence.
+Le thésaurus **Iconclass** constitue un modèle intéressant (voir [**ici**](https://iconclass.org/fr/_)) avec sa structure en arborescence.
 
 Si l'on cherche « cat », on le trouve en plusieurs endroits du thésaurus.
-Son entrée principale ([**ici**](https://iconclass.org/34B12)) ne présente pas assez de variété pour couvrir tous nos besoins : il faut donc élaborer notre propre thésaurus.
+Son entrée principale ([**ici**](https://iconclass.org/fr/34B12)) ne présente pas assez de variété pour couvrir tous nos besoins : il faut donc élaborer notre propre thésaurus.
 
 
-### <33>
+### <36>
 
 Essayons de concevoir un ensemble de valeurs (ou catégories) qui décrivent dans nos objets *ce que les chats font* ou *comment ils sont représentés*.
 
@@ -420,14 +446,14 @@ Essayons de concevoir un ensemble de valeurs (ou catégories) qui décrivent dan
 3. Transposer cette arborescence dans une feuille de tableur
 
 
-### <34>
+### <37>
 
 **Étape 1 : cartographier les concepts**
 
 ![Dégager des thèmes de plus en plus englobant](img/demos_20230103_180332.jpg)
 
 
-### <35>
+### <38>
 
 **Étape 2 : structurer les concepts en arborescence**
 
@@ -442,50 +468,50 @@ Pour changer les numérotations des niveaux :
 
 - Menu pricipal : **Format** > Puces et numérotation
 
-Voir la liste à plusieurs niveaux [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=279130).
+Voir la liste à plusieurs niveaux [**ici**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=321310).
 
 
-### <36>
+### <39>
 
 **Étape 3 : Transposer cette arborescence dans une feuille de tableur**
 
-Voir le tableau [**là**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=279142).
+Voir le tableau [**là**](https://pedag.u-picardie.fr/moodle/upjv/mod/resource/view.php?id=347235).
 
 
 <a id='t2-6'/>
 
 ## Tables secondaires et tables de relation 
 
-### <37>
+### <40>
 
-On va a présent appeler les informations du thésaurus **sujets** dans le tableau des œuvres.
+On va a présent appeler les informations du thésaurus **sujets** dans la table des **œuvres**.
 
 Dans la table principale :
 
-- On crée une colonne « Sujet-clé » en **U** pour saisir les clés de la table secondaire, dites **clés étrangères**
-- On crée une colonne « Sujet-code » en **V** et une colonne « Sujet-label » en **W** où l'on **appellera** automatiquement les labels de la table secondaire
+- On a une colonne « Sujet : clé » en **U** pour saisir les clés de la table secondaire, dites **clés étrangères**
+- On crée une colonne « Sujet-label » en **V** où l'on **appellera** automatiquement les labels de la table secondaire
 
 
-### <38>
+### <41>
 
 Il faut a présent remplir manuellement la colonne **U** : les clés étrangères des sujets.
 
 Pour aller chercher, dans la colonne **V**, les codes correspondants (qui se trouvent dans la 2^e^ colonne de la feuille `sujets`), il faut inscrire la formule suivante, par exemple pour la ligne 2 : 
 
-- Sous Google Sheets : **`=RECHERCHEV(U3;sujets!A:C;2;0)`**
-- Sous LibreOffice Calc : **`=RECHERCHEV(E:E;$sujets.A:C;2;0)`**
+- Sous Google Sheets : **`=RECHERCHEV(U2;sujets!A:B;2;0)`**
+- Sous LibreOffice Calc : **`=RECHERCHEV(E:E;$sujets.A:B;2;0)`**
 
 
-### <39>
+### <42>
 
-On vient donc d'associer notre table des œuvres (`Feuille1`) à une **table secondaire** (`sujets`).
+On vient donc d'associer notre table des œuvres (`oeuvres`) à une **table secondaire** (`sujets`).
 
 On peut ainsi associer *à chaque œuvre un sujet unique*.
 
-Les tables secondaires offrent une vraie **sécurité** aux données : je peux mettre à jour les labels et les codes sans risque pour la cohérence de mes données.
+Les tables secondaires offrent une vraie **sécurité** aux données : je peux mettre à jour les labels sans risque pour la cohérence de mes données.
 
 
-### <40>
+### <43>
 
 **Comment faire si une œuvre doit avoir plusieurs sujets ?**
 
@@ -501,14 +527,13 @@ Quand on élabore une base de données, et qu'il faut concevoir des tables secon
 	- Etc.
 
 
-### <41>
+### <44>
 
 Chaque fois que la réponse est "plusieurs", il faut élaborer une **table de relation**
 
 Créons donc une nouvelle feuille intitulée **`relation-oeuvres-sujets`** avec les colonnes suivantes :
 
-- **A** : Sujet-clé
-- **B** : Sujet-code : `=RECHERCHEV(A2;sujets!A:C;2;0)`
-- **C** : Sujet-label : `=RECHERCHEV(A2;sujets!A:C;3;0)`
-- **D** : Oeuvre-clé : 
-- **E** : Oeuvre-légende : `=RECHERCHEV(D2;Feuille1!A:Z;5;0)`
+- **A** : Sujet : clé, à remplir à la main
+- **B** : Sujet : label : `=RECHERCHEV(A2;sujets!A:B;2;0)`
+- **D** : Oeuvre : clé : à remplir à la main
+- **E** : Oeuvre : légende : `=RECHERCHEV(C2;oeuvres!A:Z;5;0)`
